@@ -156,11 +156,11 @@
   }
   @media (min-width:800px){.roster > div{grid-template-columns:1.05fr 1.15fr 1fr .5fr;gap:24px;padding:18px 0}}
   .roster .nm{
-    font-family:var(--display);font-weight:300;font-size:21px;line-height:1.2;
-    display:flex;align-items:center;gap:14px;
+    font-family:var(--display);font-weight:300;font-size:22px;line-height:1.2;
+    display:flex;align-items:center;gap:18px;
   }
   .roster .nm img{
-    width:54px;height:54px;flex:none;border-radius:50%;object-fit:cover;
+    width:84px;height:84px;flex:none;border-radius:50%;object-fit:cover;
     background:var(--ink-2);filter:saturate(.92);
   }
   .roster .rl{font-size:13.5px;color:var(--sand-dim)}
@@ -223,10 +223,10 @@
   /* ---------- crew ---------- */
   .crew{display:grid;gap:28px;margin-top:40px}
   @media (min-width:760px){.crew{grid-template-columns:repeat(2,1fr);max-width:860px}}
-  .crew article{border-top:2px solid var(--sea);padding-top:20px;display:grid;grid-template-columns:72px 1fr;gap:18px;align-items:start}
-  .crew .av{width:72px;height:72px;border-radius:50%;object-fit:cover;background:var(--ink-2)}
+  .crew article{border-top:2px solid var(--sea);padding-top:22px;display:grid;grid-template-columns:116px 1fr;gap:22px;align-items:start}
+  .crew .av{width:116px;height:116px;border-radius:50%;object-fit:cover;background:var(--ink-2)}
   .crew .mono{
-    width:72px;height:72px;border-radius:50%;border:1px solid var(--line);
+    width:116px;height:116px;border-radius:50%;border:1px solid var(--line);
     display:flex;align-items:center;justify-content:center;
     font-family:var(--display);font-weight:300;font-size:19px;color:var(--sea);letter-spacing:.04em;
   }
@@ -254,6 +254,15 @@
   .reel{margin:0;display:flex;flex-direction:column;gap:11px}
   .rv{position:relative;background:#0C1624;border:1px solid rgba(244,241,233,.14);overflow:hidden}
   .rv video{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;background:#0C1624}
+  .rv.is-paused{cursor:pointer}
+  .rv.is-paused::after{
+    content:"";position:absolute;left:50%;top:50%;z-index:1;
+    width:58px;height:58px;margin:-29px 0 0 -29px;border-radius:50%;
+    background:rgba(12,22,36,.55) no-repeat center/18px 20px;
+    backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+    border:1px solid rgba(244,241,233,.4);
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 20'%3E%3Cpath d='M2 1l15 9-15 9z' fill='%23F4F1E9'/%3E%3C/svg%3E");
+  }
   .snd{
     position:absolute;right:10px;bottom:10px;z-index:2;
     display:inline-flex;align-items:center;gap:7px;cursor:pointer;
@@ -484,6 +493,14 @@
 <section class="avli" style="padding-bottom:0;padding-top:clamp(22px,3vw,36px)">
   <div class="rail">
     <p class="lead" style="margin-top:0"><span data-l="ru">Ресторан современной греческой кухни в Улувату. Открыт в 2025 году, работает круглый год.</span><span data-l="en">A modern Greek restaurant in Uluwatu. Open since 2025, trading year-round.</span></p>
+    <div class="hero-meta" style="margin-top:26px">
+      <div><b>4,9 / 5</b> <span data-l="ru">рейтинг гостей</span><span data-l="en">guest rating</span></div>
+      <div><span data-l="ru">Архитектура —</span><span data-l="en">Architecture —</span> <b>DA BUREAU</b></div>
+      <div><span data-l="ru">Печату, Южная Кута, Бадунг</span><span data-l="en">Pecatu, South Kuta, Badung</span></div>
+    </div>
+    <div class="press" style="margin-top:22px">
+      <a href="https://avlibali.com" target="_blank" rel="noopener">avlibali.com <span>↗</span></a>
+    </div>
   </div>
 </section>
 
@@ -530,7 +547,7 @@
     <div class="reels">
       <figure class="reel">
         <div class="rv">
-          <video src="img/v-opa.mp4" poster="img/v-opa.jpg" muted loop playsinline preload="none"></video>
+          <video src="img/v-opa.mp4" poster="img/v-opa.jpg" autoplay muted loop playsinline preload="none"></video>
           <button class="snd" type="button" aria-pressed="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3v2.1a7 7 0 0 1 0 13.8V21a9 9 0 0 0 0-18z"/></svg>
             <span class="on" data-l="ru">Звук</span><span class="on" data-l="en">Sound</span>
@@ -545,7 +562,7 @@
 
       <figure class="reel">
         <div class="rv">
-          <video src="img/v-kitchen.mp4" poster="img/v-kitchen.jpg" muted loop playsinline preload="none"></video>
+          <video src="img/v-kitchen.mp4" poster="img/v-kitchen.jpg" autoplay muted loop playsinline preload="none"></video>
           <button class="snd" type="button" aria-pressed="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3v2.1a7 7 0 0 1 0 13.8V21a9 9 0 0 0 0-18z"/></svg>
             <span class="on" data-l="ru">Звук</span><span class="on" data-l="en">Sound</span>
@@ -560,7 +577,7 @@
 
       <figure class="reel">
         <div class="rv">
-          <video src="img/v-yard.mp4" poster="img/v-yard.jpg" muted loop playsinline preload="none"></video>
+          <video src="img/v-yard.mp4" poster="img/v-yard.jpg" autoplay muted loop playsinline preload="none"></video>
           <button class="snd" type="button" aria-pressed="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3v2.1a7 7 0 0 1 0 13.8V21a9 9 0 0 0 0-18z"/></svg>
             <span class="on" data-l="ru">Звук</span><span class="on" data-l="en">Sound</span>
@@ -575,7 +592,7 @@
 
       <figure class="reel">
         <div class="rv">
-          <video src="img/v-flowers.mp4" poster="img/v-flowers.jpg" muted loop playsinline preload="none"></video>
+          <video src="img/v-flowers.mp4" poster="img/v-flowers.jpg" autoplay muted loop playsinline preload="none"></video>
           <button class="snd" type="button" aria-pressed="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3v2.1a7 7 0 0 1 0 13.8V21a9 9 0 0 0 0-18z"/></svg>
             <span class="on" data-l="ru">Звук</span><span class="on" data-l="en">Sound</span>
@@ -1029,7 +1046,7 @@
     <h2><span data-l="ru">Ключевые специалисты</span><span data-l="en">Key specialists</span></h2>
     <div class="crew">
       <article>
-        <div class="mono">А.Л.</div>
+        <img class="av" src="img/crew-lantos.jpg" alt="">
         <div>
         <div class="rl"><span data-l="ru">Бренд-шеф</span><span data-l="en">Brand chef</span></div>
         <div class="nm"><span data-l="ru">Ангелос Лантос</span><span data-l="en">Angelos Lantos</span></div>
@@ -1111,7 +1128,8 @@
         <div class="l"><span data-l="ru">Проект</span><span data-l="en">Project</span></div>
         <div class="v">
           <span data-l="ru">Бич-клуб на Бали</span><span data-l="en">Beach club, Bali</span><br>
-          <span class="muted" data-l="ru">Улувату, полуостров Букит</span><span class="muted" data-l="en">Uluwatu, Bukit peninsula</span>
+          <span class="muted" data-l="ru">Улувату, полуостров Букит</span><span class="muted" data-l="en">Uluwatu, Bukit peninsula</span><br>
+          <a class="muted" href="https://avlibali.com" target="_blank" rel="noopener">avlibali.com</a>
         </div>
       </div>
       <div>
@@ -1150,18 +1168,43 @@
   })();
 
   (function () {
-    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var reels = Array.prototype.slice.call(document.querySelectorAll('.reel'));
     if (!reels.length) return;
 
     var items = reels.map(function (reel) {
-      return { video: reel.querySelector('video'), button: reel.querySelector('.snd'), visible: false };
+      return { video: reel.querySelector('video'), button: reel.querySelector('.snd'), wanted: false };
     });
 
-    function play(item) {
-      if (!item.video) return;
-      var p = item.video.play();
-      if (p && p.catch) p.catch(function () {});
+    function attempt(item) {
+      if (!item.video || !item.wanted) return;
+      var v = item.video;
+      v.muted = item.button.getAttribute('aria-pressed') !== 'true' ? true : false;
+      var p = v.play();
+      if (p && p.catch) {
+        p.catch(function () {
+          // retry once the browser has enough data, and again on the first user gesture
+          v.addEventListener('canplay', function once() {
+            v.removeEventListener('canplay', once);
+            if (item.wanted) { var r = v.play(); if (r && r.catch) r.catch(function () {}); }
+          });
+          armGesture();
+        });
+      }
+    }
+
+    var gestureArmed = false;
+    function armGesture() {
+      if (gestureArmed) return;
+      gestureArmed = true;
+      var fire = function () {
+        document.removeEventListener('pointerdown', fire, true);
+        document.removeEventListener('touchstart', fire, true);
+        document.removeEventListener('keydown', fire, true);
+        items.forEach(function (i) { if (i.wanted) { var r = i.video.play(); if (r && r.catch) r.catch(function () {}); } });
+      };
+      document.addEventListener('pointerdown', fire, true);
+      document.addEventListener('touchstart', fire, true);
+      document.addEventListener('keydown', fire, true);
     }
 
     function soundOn(target) {
@@ -1169,7 +1212,7 @@
         var on = item === target;
         item.video.muted = !on;
         item.button.setAttribute('aria-pressed', on ? 'true' : 'false');
-        if (on) play(item);
+        if (on) { item.wanted = true; attempt(item); }
       });
     }
 
@@ -1186,20 +1229,43 @@
       });
     });
 
-    if (reduce) return;
+    items.forEach(function (item) {
+      var v = item.video, box = v.parentNode;
+      var sync = function () { box.classList.toggle('is-paused', v.paused); };
+      v.addEventListener('play', sync);
+      v.addEventListener('pause', sync);
+      v.addEventListener('loadeddata', sync);
+      sync();
+      box.addEventListener('click', function (e) {
+        if (e.target.closest('.snd')) return;
+        if (v.paused) { item.wanted = true; v.preload = 'auto'; attempt(item); }
+        else { v.pause(); }
+      });
+    });
+
+    function start(item) {
+      item.wanted = true;
+      if (item.video.preload !== 'auto') item.video.preload = 'auto';
+      attempt(item);
+    }
+    function stop(item) {
+      item.wanted = false;
+      item.video.pause();
+      item.video.muted = true;
+      item.button.setAttribute('aria-pressed', 'false');
+    }
 
     if ('IntersectionObserver' in window) {
       var io = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
           var item = items.filter(function (i) { return i.video === entry.target; })[0];
           if (!item) return;
-          if (entry.isIntersecting) { play(item); }
-          else { item.video.pause(); item.video.muted = true; item.button.setAttribute('aria-pressed', 'false'); }
+          if (entry.isIntersecting) start(item); else stop(item);
         });
-      }, { threshold: 0.35 });
+      }, { threshold: 0.1, rootMargin: '150px 0px' });
       items.forEach(function (item) { io.observe(item.video); });
     } else {
-      items.forEach(play);
+      items.forEach(start);
     }
   })();
 </script>
