@@ -8,7 +8,7 @@
 <meta name="robots" content="noindex">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Бич-клуб на Бали — инвестиционное предложение">
-<meta property="og:description" content="Проект команды ресторана Avli в Улувату. Рынок, этапы, операционная база.">
+<meta property="og:description" content="Проект команды ресторана Avli в Улувату. Цифры, рынок, локация, команда.">
 <meta property="og:url" content="https://marketplace-me.github.io/avli/">
 <meta property="og:image" content="https://marketplace-me.github.io/avli/img/hero.jpg">
 <meta property="og:locale" content="ru_RU">
@@ -399,17 +399,32 @@
 
   .srcnote{margin-top:26px;font-size:11.5px;line-height:1.6;color:var(--sand-dim)}
   .srcnote a{color:var(--sand-dim)}
+
+  .bars.many{grid-template-columns:repeat(9,1fr);gap:clamp(5px,.9vw,12px)}
+  .bars.many .vl{font-size:clamp(12px,1.25vw,16px)}
+  .bars.many .yr{font-size:10.5px;letter-spacing:.04em}
+  .kpi{display:grid;gap:1px;background:var(--line-soft);border-block:1px solid var(--line-soft);grid-template-columns:repeat(2,1fr)}
+  @media (min-width:760px){.kpi{grid-template-columns:repeat(4,1fr)}}
+  .kpi > div{background:var(--ink);padding:26px 20px 28px}
+  .kpi .n{font-family:var(--display);font-weight:200;font-size:clamp(26px,3.4vw,40px);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+  .kpi .n small{font-size:.5em;letter-spacing:.1em;text-transform:uppercase;color:var(--sand-dim);display:block;margin-top:10px;font-family:var(--ui);font-weight:500}
+  .kpi .k{margin-top:12px;font-size:12px;line-height:1.45;color:var(--sand-dim)}
+  .near{display:grid;gap:0;margin-top:34px;border-top:1px solid var(--line-soft)}
+  @media (min-width:820px){.near{grid-template-columns:1fr 1fr;column-gap:56px}}
+  .near > div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line-soft);font-size:14.5px}
+  .near .t{color:var(--sand-dim);font-variant-numeric:tabular-nums;white-space:nowrap}
 </style>
+
 
 <header class="bar">
   <div class="mark">AVLI<span> · Bali</span></div>
   <nav>
-    <a href="#brief"><span data-l="ru">Проект</span><span data-l="en">Project</span></a>
-    <a href="#avli">Avli</a>
-    <a href="#about"><span data-l="ru">Оператор</span><span data-l="en">Operator</span></a>
+    <a href="#offer"><span data-l="ru">Цифры</span><span data-l="en">Numbers</span></a>
+    <a href="#bali"><span data-l="ru">Бали</span><span data-l="en">Bali</span></a>
     <a href="#market"><span data-l="ru">Рынок</span><span data-l="en">Market</span></a>
-    <a href="#strategy"><span data-l="ru">Этапы</span><span data-l="en">Stages</span></a>
-    <a href="#finance"><span data-l="ru">Финансы</span><span data-l="en">Financials</span></a>
+    <a href="#uluwatu"><span data-l="ru">Улувату</span><span data-l="en">Uluwatu</span></a>
+    <a href="#people"><span data-l="ru">Люди</span><span data-l="en">People</span></a>
+    <a href="#avli">Avli</a>
   </nav>
   <div class="lang" role="group" aria-label="Language">
     <button id="btn-ru" type="button" aria-pressed="true">RU</button>
@@ -434,62 +449,350 @@
   </div>
 </section>
 
-<section class="chapter" id="brief">
+<section class="chapter" id="offer">
   <div class="rail">
     <div class="no">01</div>
-    <h2><span data-l="ru">Краткая информация о проекте</span><span data-l="en">The project in brief</span></h2>
+    <h2><span data-l="ru">Коммерческое предложение</span><span data-l="en">The offer</span></h2>
   </div>
 </section>
-<section style="padding-top:clamp(20px,3vw,34px)">
+
+<div class="kpi" style="margin-top:clamp(22px,3vw,36px)">
+  <div><div class="n">—<small><span data-l="ru">уточняется</span><span data-l="en">tbd</span></small></div><div class="k"><span data-l="ru">Объем инвестиций</span><span data-l="en">Investment required</span></div></div>
+  <div><div class="n">—<small><span data-l="ru">уточняется</span><span data-l="en">tbd</span></small></div><div class="k"><span data-l="ru">Доля инвестора</span><span data-l="en">Investor share</span></div></div>
+  <div><div class="n">—<small><span data-l="ru">уточняется</span><span data-l="en">tbd</span></small></div><div class="k"><span data-l="ru">Срок окупаемости</span><span data-l="en">Payback period</span></div></div>
+  <div><div class="n">—<small><span data-l="ru">уточняется</span><span data-l="en">tbd</span></small></div><div class="k"><span data-l="ru">Доходность на вложенный капитал</span><span data-l="en">Return on capital</span></div></div>
+</div>
+
+<section style="padding-top:clamp(28px,4vw,48px)">
   <div class="rail">
-    <div class="brief">
-      <div>
-        <div class="k"><span data-l="ru">Продукт</span><span data-l="en">Product</span></div>
-        <ul>
-          <li><span data-l="ru"><b>Бич-клуб</b>: бассейн и посадка, бар, кухня на открытом огне, вечерняя программа.</span><span data-l="en"><b>A beach club</b>: pool and seating, bar, open-fire kitchen, evening programme.</span></li>
-          <li><span data-l="ru">Инициатор — команда ресторана Avli, работающего в Улувату с 2025 года.</span><span data-l="en">Initiated by the team behind Avli, trading in Uluwatu since 2025.</span></li>
-        </ul>
-      </div>
-      <div>
-        <div class="k"><span data-l="ru">Бизнес-модель</span><span data-l="en">Business model</span></div>
-        <ul>
-          <li><span data-l="ru">Сектор: hospitality, премиальный дневной досуг.</span><span data-l="en">Sector: hospitality, premium daytime leisure.</span></li>
-          <li><span data-l="ru">Целевой гость: международный турист на Буките и резидент острова.</span><span data-l="en">Target guest: the international traveller on the Bukit and the island resident.</span></li>
-          <li><span data-l="ru">Выручка: еда и напитки, депозит за посадку, тематические вечера и приватные события.</span><span data-l="en">Revenue: food and drink, seating deposits, themed nights and private events.</span></li>
-        </ul>
-      </div>
-      <div>
-        <div class="k"><span data-l="ru">География</span><span data-l="en">Geography</span></div>
-        <ul>
-          <li><span data-l="ru">Полуостров Букит, Бали. На Меласти сложился плотный кластер пляжных клубов.</span><span data-l="en">The Bukit peninsula, Bali. Melasti has formed a dense cluster of beach clubs.</span></li>
-          <li><span data-l="ru">Avli в Улувату — действующая база: люди, подрядчики, поставщики.</span><span data-l="en">Avli in Uluwatu is the live base: people, contractors, suppliers.</span></li>
-        </ul>
-      </div>
-      <div>
-        <div class="k"><span data-l="ru">Стадия проекта</span><span data-l="en">Stage</span></div>
-        <ul>
-          <li><span data-l="ru">Avli, Улувату — работает с 2025 года.</span><span data-l="en">Avli, Uluwatu — open since 2025.</span></li>
-          <li><span data-l="ru">Участок, концепция и посадочная схема<span class="pend"><span data-l="ru">в проработке</span><span data-l="en">in progress</span></span></span><span data-l="en">Site, concept and seating plan<span class="pend">in progress</span></span></li>
-        </ul>
-      </div>
-      <div>
-        <div class="k"><span data-l="ru">Инвестиции</span><span data-l="en">Investment</span></div>
-        <ul>
-          <li><span data-l="ru">Требуемая сумма<span class="pend"><span data-l="ru">уточняется</span><span data-l="en">tbd</span></span></span><span data-l="en">Amount required<span class="pend">tbd</span></span></li>
-          <li><span data-l="ru">Направления: участок и строительство, оборудование и кухня, запуск и маркетинг, оборотный капитал первого сезона.</span><span data-l="en">Use of funds: land and construction, kitchen and equipment, launch and marketing, first-season working capital.</span></li>
-        </ul>
+    <div class="figblock" style="margin-top:0">
+      <div class="cap"><span data-l="ru">Куда идут деньги</span><span data-l="en">Use of funds</span></div>
+      <p class="sub"><span data-l="ru">Доли уточняются после сметы.</span><span data-l="en">Shares to be fixed once the budget is set.</span></p>
+      <div class="hbars">
+        <div><span data-l="ru">Участок и строительство</span><span data-l="en">Land and construction</span><div class="track"></div><div class="val">—</div></div>
+        <div><span data-l="ru">Кухня и оборудование</span><span data-l="en">Kitchen and equipment</span><div class="track"></div><div class="val">—</div></div>
+        <div><span data-l="ru">Запуск и маркетинг</span><span data-l="en">Launch and marketing</span><div class="track"></div><div class="val">—</div></div>
+        <div><span data-l="ru">Оборотный капитал</span><span data-l="en">Working capital</span><div class="track"></div><div class="val">—</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="chapter" id="avli">
+<section style="padding-top:clamp(22px,3vw,36px);padding-bottom:0">
   <div class="rail">
-    <div class="no">02</div>
-    <h2><span data-l="ru">Avli, Улувату</span><span data-l="en">Avli, Uluwatu</span></h2>
+    <p class="muted" style="max-width:52ch"><span data-l="ru">Четыре этапа. Первый закрыт на проекте Avli.</span><span data-l="en">Four stages. The first is closed on the Avli project.</span></p>
+  </div>
+  <div class="stages">
+    <div class="stage">
+      <div class="no"><span data-l="ru">Этап 1</span><span data-l="en">Stage 1</span></div>
+      <div class="t"><span data-l="ru">База на острове</span><span data-l="en">A base on the island</span></div>
+      <ul>
+        <li><span data-l="ru">Avli открыт и работает</span><span data-l="en">Avli open and trading</span></li>
+        <li><span data-l="ru">Команда, подрядчики, поставщики</span><span data-l="en">Team, contractors, suppliers</span></li>
+        <li><span data-l="ru">Пройдены местные согласования</span><span data-l="en">Local approvals cleared</span></li>
+      </ul>
+      <span class="st done"><span data-l="ru">Сделано</span><span data-l="en">Done</span></span>
+    </div>
+    <div class="stage">
+      <div class="no"><span data-l="ru">Этап 2</span><span data-l="en">Stage 2</span></div>
+      <div class="t"><span data-l="ru">Участок и проект</span><span data-l="en">Site and design</span></div>
+      <ul>
+        <li><span data-l="ru">Выбор и оформление участка</span><span data-l="en">Site selection and paperwork</span></li>
+        <li><span data-l="ru">Концепция, зонирование, посадка</span><span data-l="en">Concept, zoning, seating</span></li>
+        <li><span data-l="ru">Смета и график строительства</span><span data-l="en">Budget and build schedule</span></li>
+      </ul>
+      <span class="st"><span data-l="ru">В работе</span><span data-l="en">In progress</span></span>
+    </div>
+    <div class="stage">
+      <div class="no"><span data-l="ru">Этап 3</span><span data-l="en">Stage 3</span></div>
+      <div class="t"><span data-l="ru">Строительство и запуск</span><span data-l="en">Build and launch</span></div>
+      <ul>
+        <li><span data-l="ru">Стройка, кухня, оборудование</span><span data-l="en">Construction, kitchen, equipment</span></li>
+        <li><span data-l="ru">Найм и обучение смены</span><span data-l="en">Hiring and training the shift</span></li>
+        <li><span data-l="ru">Меню, бар, пред-открытие</span><span data-l="en">Menu, bar, soft opening</span></li>
+      </ul>
+      <span class="st"><span data-l="ru">Впереди</span><span data-l="en">Ahead</span></span>
+    </div>
+    <div class="stage">
+      <div class="no"><span data-l="ru">Этап 4</span><span data-l="en">Stage 4</span></div>
+      <div class="t"><span data-l="ru">Выход на мощность</span><span data-l="en">Reaching capacity</span></div>
+      <ul>
+        <li><span data-l="ru">Ивент-программа и сезонность</span><span data-l="en">Event programme and seasonality</span></li>
+        <li><span data-l="ru">Средний чек и загрузка смен</span><span data-l="en">Average cheque and shift load</span></li>
+        <li><span data-l="ru">Второй объект на острове</span><span data-l="en">A second site on the island</span></li>
+      </ul>
+      <span class="st"><span data-l="ru">Впереди</span><span data-l="en">Ahead</span></span>
+    </div>
   </div>
 </section>
 
+<section class="chapter" id="bali">
+  <div class="rail">
+    <div class="no">02</div>
+    <h2><span data-l="ru">Бали</span><span data-l="en">Bali</span></h2>
+  </div>
+</section>
+
+<section style="padding-top:clamp(22px,3vw,36px)">
+  <div class="rail">
+    <p class="big" style="max-width:22ch"><span data-l="ru">Остров с круглогодичным спросом и доходностью выше европейской.</span><span data-l="en">An island with year-round demand and yields above Europe's.</span></p>
+
+    <div class="figblock">
+      <div class="cap"><span data-l="ru">Турпоток, млн человек в год</span><span data-l="en">Arrivals, millions a year</span></div>
+      <p class="sub"><span data-l="ru">2019–2025 — факт, BPS Bali. 2026–2027 — прогноз.</span><span data-l="en">2019–2025 actual, BPS Bali. 2026–2027 forecast.</span></p>
+      <div class="bars many">
+        <div class="col"><div class="vl">6,1</div><div class="bw"><div class="bar" style="height:81%"></div></div><div class="yr">2019</div></div>
+        <div class="col"><div class="vl">1,1</div><div class="bw"><div class="bar" style="height:14%"></div></div><div class="yr">2020</div></div>
+        <div class="col"><div class="vl">0,5</div><div class="bw"><div class="bar" style="height:7%"></div></div><div class="yr">2021</div></div>
+        <div class="col"><div class="vl">2,3</div><div class="bw"><div class="bar" style="height:31%"></div></div><div class="yr">2022</div></div>
+        <div class="col"><div class="vl">5,3</div><div class="bw"><div class="bar" style="height:71%"></div></div><div class="yr">2023</div></div>
+        <div class="col"><div class="vl">6,3</div><div class="bw"><div class="bar" style="height:84%"></div></div><div class="yr">2024</div></div>
+        <div class="col"><div class="vl">7,0</div><div class="bw"><div class="bar" style="height:93%"></div></div><div class="yr">2025</div></div>
+        <div class="col fc"><div class="vl">7,2</div><div class="bw"><div class="bar" style="height:96%"></div></div><div class="yr">2026</div></div>
+        <div class="col fc"><div class="vl">7,5</div><div class="bw"><div class="bar" style="height:100%"></div></div><div class="yr">2027</div></div>
+      </div>
+    </div>
+
+    <div class="figblock">
+      <div class="cap"><span data-l="ru">Доходность недвижимости, годовых</span><span data-l="en">Property yield, annual</span></div>
+      <p class="sub"><span data-l="ru">Средняя загрузка на Бали — 75%.</span><span data-l="en">Average occupancy in Bali — 75%.</span></p>
+      <div class="hbars">
+        <div><span data-l="ru">Бали</span><span data-l="en">Bali</span><div class="track"><div class="fill" style="width:100%"></div></div><div class="val">9–10%</div></div>
+        <div><span data-l="ru">Таиланд</span><span data-l="en">Thailand</span><div class="track"><div class="fill" style="width:80%"></div></div><div class="val">8%</div></div>
+        <div><span data-l="ru">Дубай</span><span data-l="en">Dubai</span><div class="track"><div class="fill" style="width:60%"></div></div><div class="val">6%</div></div>
+        <div><span data-l="ru">Россия</span><span data-l="en">Russia</span><div class="track"><div class="fill" style="width:55%"></div></div><div class="val">5,5%</div></div>
+        <div><span data-l="ru">Испания</span><span data-l="en">Spain</span><div class="track"><div class="fill" style="width:50%"></div></div><div class="val">5%</div></div>
+        <div><span data-l="ru">Сингапур</span><span data-l="en">Singapore</span><div class="track"><div class="fill" style="width:20%"></div></div><div class="val">2%</div></div>
+      </div>
+    </div>
+
+    <div class="figblock">
+      <div class="cap"><span data-l="ru">Сезона нет: минимум и максимум месяца, 2026</span><span data-l="en">No off season: lowest and highest month, 2026</span></div>
+      <p class="sub"><span data-l="ru">Март — 472 тыс., июль — 698 тыс. человек. Разница 48%, но загрузка не обнуляется никогда.</span><span data-l="en">March 472k, July 698k. A 48% spread, and never a dead month.</span></p>
+      <div class="hbars">
+        <div><span data-l="ru">Июль</span><span data-l="en">July</span><div class="track"><div class="fill" style="width:100%"></div></div><div class="val">698 000</div></div>
+        <div><span data-l="ru">Март</span><span data-l="en">March</span><div class="track"><div class="fill" style="width:68%"></div></div><div class="val">472 000</div></div>
+      </div>
+    </div>
+
+    <div class="figblock">
+      <div class="cap"><span data-l="ru">Откуда едут, доля потока · январь–июль 2026</span><span data-l="en">Source markets · Jan–Jul 2026</span></div>
+      <div class="hbars">
+        <div><span data-l="ru">Австралия</span><span data-l="en">Australia</span><div class="track"><div class="fill" style="width:100%"></div></div><div class="val">25,0%</div></div>
+        <div><span data-l="ru">Китай</span><span data-l="en">China</span><div class="track"><div class="fill" style="width:35%"></div></div><div class="val">8,8%</div></div>
+        <div><span data-l="ru">Индия</span><span data-l="en">India</span><div class="track"><div class="fill" style="width:32%"></div></div><div class="val">8,1%</div></div>
+        <div><span data-l="ru">Великобритания</span><span data-l="en">UK</span><div class="track"><div class="fill" style="width:18%"></div></div><div class="val">4,4%</div></div>
+        <div><span data-l="ru">Южная Корея</span><span data-l="en">South Korea</span><div class="track"><div class="fill" style="width:17%"></div></div><div class="val">4,2%</div></div>
+        <div><span data-l="ru">США</span><span data-l="en">USA</span><div class="track"><div class="fill" style="width:17%"></div></div><div class="val">4,2%</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" id="growth">
+  <div class="rail">
+    <div class="no">03</div>
+    <h2><span data-l="ru">Индонезия растет</span><span data-l="en">Indonesia is growing</span></h2>
+  </div>
+</section>
+
+<div class="kpi" style="margin-top:clamp(22px,3vw,36px)">
+  <div><div class="n">288 <small><span data-l="ru">млн человек</span><span data-l="en">million people</span></small></div><div class="k"><span data-l="ru">4-е место в мире по населению</span><span data-l="en">4th largest population in the world</span></div></div>
+  <div><div class="n">+52%</div><div class="k"><span data-l="ru">рост прямых инвестиций за 2024 год</span><span data-l="en">growth in direct investment in 2024</span></div></div>
+  <div><div class="n">5-я</div><div class="k"><span data-l="ru">экономика мира к 2045 году</span><span data-l="en">largest economy in the world by 2045</span></div></div>
+  <div><div class="n">17 000</div><div class="k"><span data-l="ru">островов, 1,9 млн км²</span><span data-l="en">islands, 1.9m km²</span></div></div>
+</div>
+
+<section style="padding-top:clamp(28px,4vw,48px)" id="market">
+  <div class="rail">
+    <p class="big" style="max-width:24ch"><span data-l="ru">Ресторанный рынок Индонезии почти удвоится за пять лет.</span><span data-l="en">Indonesia's restaurant market nearly doubles in five years.</span></p>
+    <div class="figblock" style="margin-top:0">
+      <div class="cap"><span data-l="ru">Объем рынка общественного питания, млрд долларов</span><span data-l="en">Foodservice market, USD billion</span></div>
+      <p class="sub"><span data-l="ru">Рост 12,8% в год. Источник: Mordor Intelligence.</span><span data-l="en">Growing at 12.8% a year. Source: Mordor Intelligence.</span></p>
+      <div class="bars" style="grid-template-columns:repeat(2,1fr);max-width:520px">
+        <div class="col"><div class="vl">70,4</div><div class="bw"><div class="bar" style="height:55%"></div></div><div class="yr">2026</div></div>
+        <div class="col fc"><div class="vl">128,8</div><div class="bw"><div class="bar" style="height:100%"></div></div><div class="yr">2031</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" id="why">
+  <div class="rail">
+    <div class="no">04</div>
+    <h2><span data-l="ru">Почему бич-клуб</span><span data-l="en">Why a beach club</span></h2>
+  </div>
+</section>
+
+<section style="padding-top:clamp(22px,3vw,36px)">
+  <div class="rail">
+    <div class="proof" style="margin-top:0">
+      <div>
+        <div class="n">01</div>
+        <div class="t"><span data-l="ru">Гость платит за день, а не за блюдо</span><span data-l="en">The guest pays for a day, not a dish</span></div>
+        <p><span data-l="ru">Депозит за лежак, бар весь день, кухня и вечерняя программа — несколько чеков с одного гостя.</span><span data-l="en">A seat deposit, the bar all day, the kitchen and the evening programme — several cheques from one guest.</span></p>
+      </div>
+      <div>
+        <div class="n">02</div>
+        <div class="t"><span data-l="ru">Две смены вместо одной</span><span data-l="en">Two shifts, not one</span></div>
+        <p><span data-l="ru">Дневной бассейн и вечерний ужин работают на одной площадке и одной кухне.</span><span data-l="en">The daytime pool and the evening service share one site and one kitchen.</span></p>
+      </div>
+      <div>
+        <div class="n">03</div>
+        <div class="t"><span data-l="ru">Четверть потока — австралийцы</span><span data-l="en">A quarter of arrivals are Australian</span></div>
+        <p><span data-l="ru">Рынок, для которого бич-клуб — привычный формат отдыха.</span><span data-l="en">A market for which the beach club is the default way to spend a day.</span></p>
+      </div>
+    </div>
+
+    <div class="figblock">
+      <div class="cap"><span data-l="ru">Порог входа в клубах Букита, IDR на человека</span><span data-l="en">Entry threshold at Bukit clubs, IDR per person</span></div>
+      <p class="sub"><span data-l="ru">Разброс в 18 раз. Источник: The Honeycombers, 2026.</span><span data-l="en">An 18-fold spread. Source: The Honeycombers, 2026.</span></p>
+      <div class="hbars">
+        <div>Tropical Temptation<div class="track"><div class="fill" style="width:100%"></div></div><div class="val">1 800 000</div></div>
+        <div>Uma Beach House<div class="track"><div class="fill" style="width:83%"></div></div><div class="val">1 500 000</div></div>
+        <div>White Rock<div class="track"><div class="fill" style="width:56%"></div></div><div class="val">1 000 000</div></div>
+        <div>Sundays Beach Club<div class="track"><div class="fill" style="width:44%"></div></div><div class="val">800 000</div></div>
+        <div>Karma Beach<div class="track"><div class="fill" style="width:44%"></div></div><div class="val">800 000</div></div>
+        <div>Klive<div class="track"><div class="fill" style="width:14%"></div></div><div class="val">250 000</div></div>
+        <div>Palmilla<div class="track"><div class="fill" style="width:6%"></div></div><div class="val">100 000</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" id="uluwatu">
+  <div class="rail">
+    <div class="no">05</div>
+    <h2><span data-l="ru">Улувату</span><span data-l="en">Uluwatu</span></h2>
+  </div>
+</section>
+
+<section style="padding-top:clamp(22px,3vw,36px)">
+  <div class="rail">
+    <p class="big" style="max-width:22ch"><span data-l="ru">Район, где за три года собрался весь премиальный досуг острова.</span><span data-l="en">The district where the island's premium leisure has gathered in three years.</span></p>
+
+    <div class="kpi" style="margin-top:0">
+      <div><div class="n">300–950 <small>USD / м²</small></div><div class="k"><span data-l="ru">земля на Буките</span><span data-l="en">land on the Bukit</span></div></div>
+      <div><div class="n">−40%</div><div class="k"><span data-l="ru">к цене земли в центре Чангу</span><span data-l="en">against central Canggu land</span></div></div>
+      <div><div class="n">10–15%<small>net</small></div><div class="k"><span data-l="ru">доходность при профессиональном управлении</span><span data-l="en">yield under professional management</span></div></div>
+      <div><div class="n">30 <small><span data-l="ru">минут</span><span data-l="en">minutes</span></small></div><div class="k"><span data-l="ru">до международного аэропорта</span><span data-l="en">to the international airport</span></div></div>
+    </div>
+
+    <div class="figblock">
+      <div class="cap"><span data-l="ru">Что в районе</span><span data-l="en">What is in the district</span></div>
+      <p class="sub"><span data-l="ru">Время в пути внутри Улувату. Точный участок определяется.</span><span data-l="en">Travel times within Uluwatu. The exact plot is still being selected.</span></p>
+      <div class="near">
+        <div><span>Savaya Bali</span><span class="t">18 <span data-l="ru">мин</span><span data-l="en">min</span></span></div>
+        <div><span>Sundays Beach Club</span><span class="t">25 <span data-l="ru">мин</span><span data-l="en">min</span></span></div>
+        <div><span>The Edge</span><span class="t">15 <span data-l="ru">мин</span><span data-l="en">min</span></span></div>
+        <div><span>Ulu Cliffhouse</span><span class="t">16 <span data-l="ru">мин</span><span data-l="en">min</span></span></div>
+        <div><span data-l="ru">Храм Улувату</span><span data-l="en">Uluwatu Temple</span><span class="t">6 <span data-l="ru">мин</span><span data-l="en">min</span></span></div>
+        <div><span data-l="ru">Пляж Паданг-Паданг</span><span data-l="en">Padang Padang beach</span><span class="t">5–7 <span data-l="ru">мин</span><span data-l="en">min</span></span></div>
+        <div><span data-l="ru">Пляж Бингин</span><span data-l="en">Bingin beach</span><span class="t">10 <span data-l="ru">мин</span><span data-l="en">min</span></span></div>
+        <div><span data-l="ru">Пляж Дримленд</span><span data-l="en">Dreamland beach</span><span class="t">15 <span data-l="ru">мин</span><span data-l="en">min</span></span></div>
+      </div>
+    </div>
+
+    <div class="proof" style="margin-top:46px">
+      <div>
+        <div class="n"><span data-l="ru">Регулирование</span><span data-l="en">Regulation</span></div>
+        <div class="t"><span data-l="ru">Бадунг вне моратория</span><span data-l="en">Badung outside the moratorium</span></div>
+        <p><span data-l="ru">Запрет на новые туробъекты действует в шести других районах Бали.</span><span data-l="en">The ban on new tourism development applies in six other districts.</span></p>
+      </div>
+      <div>
+        <div class="n"><span data-l="ru">Спрос</span><span data-l="en">Demand</span></div>
+        <div class="t"><span data-l="ru">Серферы и резиденты</span><span data-l="en">Surfers and residents</span></div>
+        <p><span data-l="ru">Круглогодичная волна держит на Буките постоянное сообщество, а не только транзитных туристов.</span><span data-l="en">A year-round swell keeps a permanent community on the Bukit, not just passing tourists.</span></p>
+      </div>
+      <div>
+        <div class="n"><span data-l="ru">Конкуренция</span><span data-l="en">Competition</span></div>
+        <div class="t"><span data-l="ru">Кластер на Меласти</span><span data-l="en">The Melasti cluster</span></div>
+        <p><span data-l="ru">Семь клубов в одном радиусе: спрос подтвержден, ниша по цене свободна.</span><span data-l="en">Seven clubs within one radius: demand proven, the price niche open.</span></p>
+      </div>
+    </div>
+
+    <p class="srcnote"><span data-l="ru">Источники: BPS Bali и Rise Real Bali (турпоток), Mordor Intelligence (рынок общепита), The Honeycombers (пороги входа), Bright Solution Property (земля и доходность).</span><span data-l="en">Sources: BPS Bali and Rise Real Bali (arrivals), Mordor Intelligence (foodservice market), The Honeycombers (entry thresholds), Bright Solution Property (land and yields).</span></p>
+  </div>
+</section>
+
+<section class="chapter" id="people">
+  <div class="rail">
+    <div class="no">06</div>
+    <h2><span data-l="ru">Кто стоит за проектом</span><span data-l="en">Who stands behind it</span></h2>
+  </div>
+</section>
+<section style="padding-top:clamp(22px,3vw,36px)">
+  <div class="rail">
+    <p class="eyebrow"><span data-l="ru">Кухня и бар</span><span data-l="en">Kitchen and bar</span></p>
+    <h2><span data-l="ru">Ключевые специалисты</span><span data-l="en">Key specialists</span></h2>
+    <div class="crew">
+      <article>
+        <img class="av" src="img/crew-lantos.jpg" alt="">
+        <div>
+        <div class="rl"><span data-l="ru">Бренд-шеф</span><span data-l="en">Brand chef</span></div>
+        <div class="nm"><span data-l="ru">Ангелос Лантос</span><span data-l="en">Angelos Lantos</span></div>
+        <p><span data-l="ru">17 лет в афинском Spondi — две звезды Michelin.</span><span data-l="en">17 years at Spondi, Athens — two Michelin stars.</span></p>
+        </div>
+      </article>
+      <article>
+        <img class="av" src="img/crew-pometkov.jpg" alt="">
+        <div>
+        <div class="rl"><span data-l="ru">Шеф-бармен</span><span data-l="en">Head bartender</span></div>
+        <div class="nm"><span data-l="ru">Рома Пометков</span><span data-l="en">Roma Pometkov</span></div>
+        <p><span data-l="ru">Экс-Public. Совладелец NAU, создатель бара The Nest.</span><span data-l="en">Ex-Public. Co-owner of NAU, founder of The Nest.</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="team" style="padding-top:0">
+  <div class="rail">
+    <p class="eyebrow"><span data-l="ru">Команда</span><span data-l="en">Team</span></p>
+    <h2><span data-l="ru">Управляющая команда</span><span data-l="en">The management team</span></h2>
+    <p class="muted" style="margin-top:18px"><span data-l="ru">Основатели работают вместе с 2001 года.</span><span data-l="en">The founders have worked together since 2001.</span></p>
+
+    <div class="roster">
+      <div>
+        <div class="nm"><img src="img/team-1.jpg" alt=""><span data-l="ru">Борис Крупкин</span><span data-l="en">Boris Krupkin</span></div>
+        <div class="rl"><span data-l="ru">Совладелец, генеральный директор</span><span data-l="en">Co-owner, CEO</span></div>
+        <div class="cr"><span data-l="ru">«Чайная ложка», 2001–2008</span><span data-l="en">Chainaya Lozhka, 2001–2008</span></div>
+        <div class="sn"><span data-l="ru">с 2008</span><span data-l="en">since 2008</span></div>
+      </div>
+      <div>
+        <div class="nm"><img src="img/team-2.jpg" alt=""><span data-l="ru">Михаил Августин</span><span data-l="en">Mikhail Avgustin</span></div>
+        <div class="rl"><span data-l="ru">Совладелец, директор по развитию</span><span data-l="en">Co-owner, development director</span></div>
+        <div class="cr"><span data-l="ru">«Чайная ложка», 2001–2008</span><span data-l="en">Chainaya Lozhka, 2001–2008</span></div>
+        <div class="sn"><span data-l="ru">с 2008</span><span data-l="en">since 2008</span></div>
+      </div>
+      <div>
+        <div class="nm"><img src="img/team-6.jpg" alt=""><span data-l="ru">Виктория Артемьева</span><span data-l="en">Victoria Artemyeva</span></div>
+        <div class="rl"><span data-l="ru">Исполнительный директор</span><span data-l="en">Executive director</span></div>
+        <div class="cr"><span data-l="ru">20 лет в индустрии</span><span data-l="en">20 years in the industry</span></div>
+        <div class="sn"><span data-l="ru">с 2008</span><span data-l="en">since 2008</span></div>
+      </div>
+      <div>
+        <div class="nm"><img src="img/team-5.jpg" alt=""><span data-l="ru">Маргарита Даймонд</span><span data-l="en">Margarita Daimond</span></div>
+        <div class="rl"><span data-l="ru">Маркетинг и продукт</span><span data-l="en">Marketing and product</span></div>
+        <div class="cr"><span data-l="ru">15 лет в индустрии</span><span data-l="en">15 years in the industry</span></div>
+        <div class="sn"><span data-l="ru">с 2017</span><span data-l="en">since 2017</span></div>
+      </div>
+      <div>
+        <div class="nm"><img src="img/team-3.jpg" alt=""><span data-l="ru">Владимир Шамшур</span><span data-l="en">Vladimir Shamshur</span></div>
+        <div class="rl"><span data-l="ru">IT-директор</span><span data-l="en">IT director</span></div>
+        <div class="cr">ex-CTO Carl's Jr.</div>
+        <div class="sn"><span data-l="ru">с 2022</span><span data-l="en">since 2022</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter">
+  <div class="rail">
+    <div class="no">07</div>
+    <h2><span data-l="ru">Кто мы на Бали</span><span data-l="en">Who we are in Bali</span></h2>
+  </div>
+</section>
 <section class="avli" style="padding-bottom:0;padding-top:clamp(22px,3vw,36px)">
   <div class="rail">
     <p class="lead" style="margin-top:0"><span data-l="ru">Ресторан современной греческой кухни в Улувату. Открыт в 2025 году, работает круглый год.</span><span data-l="en">A modern Greek restaurant in Uluwatu. Open since 2025, trading year-round.</span></p>
@@ -659,55 +962,14 @@
 
 <div class="band">
   <img src="img/o-napkins.jpg" alt="Avli — OPA Night" loading="lazy">
-  <div class="cap"><div class="rail"><p><span data-l="ru">OPA Night: программа собирает полную посадку</span><span data-l="en">OPA Night: the programme fills the floor</span></p></div></div>
-</div>
+  <div class="cap"><div class="rail"><p><span data-l="ru">OPA Night: программа собирает полную посадку</span><span data-l="en">OPA Night: the programme fills the floor</span></p></div>
 
-<section class="chapter" id="about">
+<section class="chapter">
   <div class="rail">
-    <div class="no">03</div>
-    <h2><span data-l="ru">Кто стоит за проектом</span><span data-l="en">Who stands behind it</span></h2>
+    <div class="no">08</div>
+    <h2><span data-l="ru">Реализованные проекты</span><span data-l="en">Delivered projects</span></h2>
   </div>
 </section>
-<section class="statement" style="padding-top:clamp(20px,3vw,34px)">
-  <div class="rail">
-    <p class="big"><span data-l="ru">Инициатор проекта — ресторанная группа, работающая с 2008 года: 30 000 гостей в день, собственное производство и IT-платформа.</span><span data-l="en">The project is backed by a restaurant group operating since 2008: 30,000 guests a day, in-house production and its own IT platform.</span></p>
-
-    <div class="geo">
-      <div>
-        <b><span data-l="ru">Бали</span><span data-l="en">Bali</span></b>
-        <i><span data-l="ru">Avli, Улувату · с 2025</span><span data-l="en">Avli, Uluwatu · since 2025</span></i>
-      </div>
-      <div>
-        <b><span data-l="ru">Санкт-Петербург</span><span data-l="en">St Petersburg</span></b>
-        <i><span data-l="ru">с 2008 · головной офис</span><span data-l="en">since 2008 · head office</span></i>
-      </div>
-      <div>
-        <b><span data-l="ru">Москва</span><span data-l="en">Moscow</span></b>
-        <i><span data-l="ru">137 кофеен · 2 музея</span><span data-l="en">137 cafés · 2 museums</span></i>
-      </div>
-    </div>
-
-    <div class="facts">
-      <div>
-        <div class="k"><span data-l="ru">Формат</span><span data-l="en">Format</span></div>
-        <div class="v"><span data-l="ru">Fast casual, free flow, открытая кухня</span><span data-l="en">Fast casual, free flow, open kitchen</span></div>
-      </div>
-      <div>
-        <div class="k"><span data-l="ru">Производство</span><span data-l="en">Production</span></div>
-        <div class="v"><span data-l="ru">Свой кондитерский цех</span><span data-l="en">Our own pastry facility</span></div>
-      </div>
-      <div>
-        <div class="k">Сбербанк</div>
-        <div class="v"><span data-l="ru">9+ лет · 1200 человек в день</span><span data-l="en">9+ years · 1,200 people a day</span></div>
-      </div>
-      <div>
-        <div class="k">IT</div>
-        <div class="v"><span data-l="ru">Единый профиль гостя</span><span data-l="en">One guest profile</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <div class="figures">
   <div class="fig"><div class="n">2008</div><div class="k"><span data-l="ru">год основания группы</span><span data-l="en">the group was founded</span></div></div>
   <div class="fig"><div class="n">30 000</div><div class="k"><span data-l="ru">гостей каждый день</span><span data-l="en">guests every day</span></div></div>
@@ -715,6 +977,8 @@
   <div class="fig"><div class="n">137</div><div class="k"><span data-l="ru">кофеен и буфетов в поликлиниках Москвы</span><span data-l="en">cafés and buffets in Moscow clinics</span></div></div>
   <div class="fig"><div class="n">25 000</div><div class="k"><span data-l="ru">человек в день в парках Петергофа</span><span data-l="en">daily footfall in the Peterhof parks</span></div></div>
 </div>
+
+
 
 <section style="padding-bottom:0">
   <div class="rail">
@@ -800,307 +1064,6 @@
       <div>
         <div class="k"><span data-l="ru">Банкеты</span><span data-l="en">Banqueting</span></div>
         <div class="v"><span data-l="ru">С 2013 года · Сбер, ВТБ, Novartis</span><span data-l="en">Since 2013 · Sber, VTB, Novartis</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="chapter" id="market">
-  <div class="rail">
-    <div class="no">04</div>
-    <h2><span data-l="ru">Рынок и конкуренция</span><span data-l="en">Market and competition</span></h2>
-  </div>
-</section>
-
-<section style="padding-top:clamp(22px,3vw,36px)">
-  <div class="rail">
-    <p class="big" style="max-width:26ch"><span data-l="ru">Турпоток Бали стабилизировался на уровне около 7 млн человек в год. Конкуренция смещается в качество продукта и средний чек.</span><span data-l="en">Arrivals have levelled off at about 7 million a year. Competition is shifting to product quality and average spend.</span></p>
-
-    <div class="figblock">
-      <div class="cap"><span data-l="ru">Иностранные туристы на Бали, млн человек</span><span data-l="en">Foreign arrivals in Bali, millions</span></div>
-      <p class="sub"><span data-l="ru">Источник: BPS Bali. 2026 — прогноз PT Hotel Investment Advisory.</span><span data-l="en">Source: BPS Bali. 2026 — forecast by PT Hotel Investment Advisory.</span></p>
-      <div class="bars">
-        <div class="col"><div class="vl">5,27</div><div class="bw"><div class="bar" style="height:76%"></div></div><div class="yr">2023</div></div>
-        <div class="col"><div class="vl">6,33</div><div class="bw"><div class="bar" style="height:91%"></div></div><div class="yr">2024</div></div>
-        <div class="col"><div class="vl">6,95</div><div class="bw"><div class="bar" style="height:100%"></div></div><div class="yr">2025</div></div>
-        <div class="col fc"><div class="vl">6,93</div><div class="bw"><div class="bar" style="height:99%"></div></div><div class="yr"><span data-l="ru">2026 прогноз</span><span data-l="en">2026 forecast</span></div></div>
-      </div>
-    </div>
-
-    <div class="figblock">
-      <div class="cap"><span data-l="ru">Откуда едут, доля рынка · январь–июль 2026</span><span data-l="en">Where they come from, market share · Jan–Jul 2026</span></div>
-      <p class="sub"><span data-l="ru">На Австралию приходится четверть въездного потока.</span><span data-l="en">Australia accounts for a quarter of all arrivals.</span></p>
-      <div class="hbars">
-        <div><span data-l="ru">Австралия</span><span data-l="en">Australia</span><div class="track"><div class="fill" style="width:100%"></div></div><div class="val">25,0%</div></div>
-        <div><span data-l="ru">Китай</span><span data-l="en">China</span><div class="track"><div class="fill" style="width:35%"></div></div><div class="val">8,8%</div></div>
-        <div><span data-l="ru">Индия</span><span data-l="en">India</span><div class="track"><div class="fill" style="width:32%"></div></div><div class="val">8,1%</div></div>
-        <div><span data-l="ru">Великобритания</span><span data-l="en">UK</span><div class="track"><div class="fill" style="width:18%"></div></div><div class="val">4,4%</div></div>
-        <div><span data-l="ru">Южная Корея</span><span data-l="en">South Korea</span><div class="track"><div class="fill" style="width:17%"></div></div><div class="val">4,2%</div></div>
-        <div><span data-l="ru">США</span><span data-l="en">USA</span><div class="track"><div class="fill" style="width:17%"></div></div><div class="val">4,2%</div></div>
-      </div>
-    </div>
-
-    <div class="figblock">
-      <div class="cap"><span data-l="ru">Порог входа в клубы Букита, IDR на человека</span><span data-l="en">Entry threshold at Bukit clubs, IDR per person</span></div>
-      <p class="sub"><span data-l="ru">Разброс порога входа — от 100 тыс. до 1,8 млн IDR на человека.</span><span data-l="en">The entry threshold ranges from 100 thousand to 1.8 million IDR per person.</span></p>
-      <div class="hbars">
-        <div>Tropical Temptation<div class="track"><div class="fill" style="width:100%"></div></div><div class="val">1 800 000</div></div>
-        <div>Uma Beach House<div class="track"><div class="fill" style="width:83%"></div></div><div class="val">1 500 000</div></div>
-        <div>White Rock<div class="track"><div class="fill" style="width:56%"></div></div><div class="val">1 000 000</div></div>
-        <div>Sundays Beach Club<div class="track"><div class="fill" style="width:44%"></div></div><div class="val">800 000</div></div>
-        <div>Karma Beach<div class="track"><div class="fill" style="width:44%"></div></div><div class="val">800 000</div></div>
-        <div>Klive<div class="track"><div class="fill" style="width:14%"></div></div><div class="val">250 000</div></div>
-        <div>Palmilla<div class="track"><div class="fill" style="width:6%"></div></div><div class="val">100 000</div></div>
-      </div>
-    </div>
-
-    <div class="tblwrap">
-      <table class="tbl">
-        <thead>
-          <tr>
-            <th><span data-l="ru">Клуб</span><span data-l="en">Club</span></th>
-            <th><span data-l="ru">Локация</span><span data-l="en">Location</span></th>
-            <th><span data-l="ru">Вход и минимум</span><span data-l="en">Entry and minimum</span></th>
-            <th><span data-l="ru">Ключевое преимущество</span><span data-l="en">Key advantage</span></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Sundays Beach Club</td><td class="dim"><span data-l="ru">Унгасан</span><span data-l="en">Ungasan</span></td><td><span data-l="ru">800 000 IDR, из них 500 000 — депозит на еду</span><span data-l="en">800,000 IDR, of which 500,000 is an F&amp;B credit</span></td><td class="dim"><span data-l="ru">Свой пляж, спуск с утеса</span><span data-l="en">Private beach, cliff descent</span></td></tr>
-          <tr><td>Karma Beach</td><td class="dim"><span data-l="ru">Унгасан</span><span data-l="en">Ungasan</span></td><td><span data-l="ru">от 800 000 IDR с депозитом</span><span data-l="en">from 800,000 IDR with credit</span></td><td class="dim"><span data-l="ru">Закрытая бухта</span><span data-l="en">A closed bay</span></td></tr>
-          <tr><td>Tropical Temptation</td><td class="dim"><span data-l="ru">Меласти</span><span data-l="en">Melasti</span></td><td><span data-l="ru">вход свободный, премиум от 1 800 000 IDR</span><span data-l="en">free entry, premium from 1,800,000 IDR</span></td><td class="dim"><span data-l="ru">18+, несколько инфинити-бассейнов</span><span data-l="en">Adults only, several infinity pools</span></td></tr>
-          <tr><td>Uma Beach House</td><td class="dim"><span data-l="ru">Меласти</span><span data-l="en">Melasti</span></td><td><span data-l="ru">вход свободный, премиум от 1 500 000 IDR</span><span data-l="en">free entry, premium from 1,500,000 IDR</span></td><td class="dim"><span data-l="ru">Вид на океан</span><span data-l="en">Ocean view</span></td></tr>
-          <tr><td>White Rock</td><td class="dim"><span data-l="ru">Меласти</span><span data-l="en">Melasti</span></td><td><span data-l="ru">вход свободный, премиум от 1 000 000 IDR</span><span data-l="en">free entry, premium from 1,000,000 IDR</span></td><td class="dim"><span data-l="ru">7 500 м² площади</span><span data-l="en">7,500 sqm</span></td></tr>
-          <tr><td>Klive</td><td class="dim"><span data-l="ru">Меласти</span><span data-l="en">Melasti</span></td><td><span data-l="ru">вход свободный, премиум от 250 000 IDR</span><span data-l="en">free entry, premium from 250,000 IDR</span></td><td class="dim"><span data-l="ru">Семь уровней в скале</span><span data-l="en">A seven-deck cliff structure</span></td></tr>
-          <tr><td>Savaya · Ulu Cliffhouse · El Kabron</td><td class="dim"><span data-l="ru">Улувату, скалы</span><span data-l="en">Uluwatu cliffs</span></td><td class="dim"><span data-l="ru">—</span><span data-l="en">—</span></td><td class="dim"><span data-l="ru">Клубы на утесе без выхода к воде</span><span data-l="en">Clifftop clubs with no water access</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="proof" style="margin-top:46px">
-      <div>
-        <div class="n"><span data-l="ru">Земля</span><span data-l="en">Land</span></div>
-        <div class="t">USD 300–950 / м²</div>
-        <p><span data-l="ru">Букит примерно на 40% дешевле центрального Чангу.</span><span data-l="en">The Bukit runs about 40% below central Canggu.</span></p>
-      </div>
-      <div>
-        <div class="n"><span data-l="ru">Доходность</span><span data-l="en">Yield</span></div>
-        <div class="t">10–15% net</div>
-        <p><span data-l="ru">При профессиональном управлении объектом.</span><span data-l="en">Under professional management.</span></p>
-      </div>
-      <div>
-        <div class="n"><span data-l="ru">Регулирование</span><span data-l="en">Regulation</span></div>
-        <div class="t"><span data-l="ru">Бадунг вне моратория</span><span data-l="en">Badung outside the moratorium</span></div>
-        <p><span data-l="ru">Запрет на новые туробъекты действует в шести других районах Бали.</span><span data-l="en">The ban on new tourism development applies in six other districts.</span></p>
-      </div>
-    </div>
-
-    <p class="srcnote">
-      <span data-l="ru">Источники: BPS Bali и Rise Real Bali (турпоток и рынки), The Honeycombers (пороги входа в клубы, 2026), Bright Solution Property (земля и доходность на Буките, 2026).</span><span data-l="en">Sources: BPS Bali and Rise Real Bali (arrivals and source markets), The Honeycombers (club entry thresholds, 2026), Bright Solution Property (Bukit land and yields, 2026).</span>
-    </p>
-  </div>
-</section>
-
-
-
-<section class="chapter" id="club">
-  <div class="rail">
-    <div class="no">05</div>
-    <h2><span data-l="ru">Обзор проекта</span><span data-l="en">Project overview</span></h2>
-  </div>
-</section>
-
-<section style="padding-top:clamp(22px,3vw,36px)">
-  <div class="rail">
-    <p class="muted" style="max-width:52ch"><span data-l="ru">Состав объекта. Площади и посадка уточняются после выбора участка.</span><span data-l="en">The composition of the venue. Areas and seat counts follow the choice of site.</span></p>
-    <div class="zones">
-      <div class="zone">
-        <div class="t"><span data-l="ru">Бассейн и посадка</span><span data-l="en">Pool and seating</span></div>
-        <p><span data-l="ru">Основная дневная выручка: лежаки, кабаны, депозит за посадку.</span><span data-l="en">The main daytime revenue: sunbeds, cabanas, seating deposits.</span></p>
-      </div>
-      <div class="zone">
-        <div class="t"><span data-l="ru">Бар</span><span data-l="en">The bar</span></div>
-        <p><span data-l="ru">Коктейльная карта под руководством шеф-бармена группы.</span><span data-l="en">A cocktail list led by the group's head bartender.</span></p>
-      </div>
-      <div class="zone">
-        <div class="t"><span data-l="ru">Кухня на огне</span><span data-l="en">Fire kitchen</span></div>
-        <p><span data-l="ru">Печь, угли, гриль. Технология отработана на Avli.</span><span data-l="en">Oven, coals, grill. The technique is already proven at Avli.</span></p>
-      </div>
-      <div class="zone">
-        <div class="t"><span data-l="ru">Ивент-площадка</span><span data-l="en">Event space</span></div>
-        <p><span data-l="ru">Тематические вечера и приватные мероприятия.</span><span data-l="en">Themed nights and private events.</span></p>
-      </div>
-      <div class="zone">
-        <div class="t"><span data-l="ru">Сервис и смена</span><span data-l="en">Service and shift</span></div>
-        <p><span data-l="ru">Дневная и вечерняя смены с разной посадкой и разным чеком.</span><span data-l="en">Day and evening shifts with different seating and different cheques.</span></p>
-      </div>
-      <div class="zone">
-        <div class="t"><span data-l="ru">IT и единый профиль гостя</span><span data-l="en">IT and one guest profile</span></div>
-        <p><span data-l="ru">Бронирование, депозит, оплата и лояльность на платформе группы.</span><span data-l="en">Booking, deposits, payment and loyalty on the group's platform.</span></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="next" style="padding-top:0">
-  <div class="rail">
-    <p class="eyebrow"><span data-l="ru">Участок<span class="pend">раздел в работе</span></span><span data-l="en">The site<span class="pend">in preparation</span></span></p>
-    <ul>
-      <li><i>01</i><b><span data-l="ru">Локация и площадь, статус земли, береговая линия, доступ</span><span data-l="en">Location and area, land status, shoreline, access</span></b></li>
-      <li><i>02</i><b><span data-l="ru">Посадочная схема: вместимость дневной и вечерней смены</span><span data-l="en">Seating plan: day-shift and evening capacity</span></b></li>
-      <li><i>03</i><b><span data-l="ru">Архитектурная концепция и визуализации</span><span data-l="en">Architectural concept and renders</span></b></li>
-    </ul>
-  </div>
-</section>
-
-
-
-<section class="chapter" id="strategy">
-  <div class="rail">
-    <div class="no">06</div>
-    <h2><span data-l="ru">Стратегия роста</span><span data-l="en">Growth strategy</span></h2>
-  </div>
-</section>
-
-<section style="padding-top:clamp(22px,3vw,36px);padding-bottom:0">
-  <div class="rail">
-    <p class="muted" style="max-width:52ch"><span data-l="ru">Четыре этапа. Первый закрыт на проекте Avli.</span><span data-l="en">Four stages. The first is closed on the Avli project.</span></p>
-  </div>
-  <div class="stages">
-    <div class="stage">
-      <div class="no"><span data-l="ru">Этап 1</span><span data-l="en">Stage 1</span></div>
-      <div class="t"><span data-l="ru">База на острове</span><span data-l="en">A base on the island</span></div>
-      <ul>
-        <li><span data-l="ru">Avli открыт и работает</span><span data-l="en">Avli open and trading</span></li>
-        <li><span data-l="ru">Команда, подрядчики, поставщики</span><span data-l="en">Team, contractors, suppliers</span></li>
-        <li><span data-l="ru">Пройдены местные согласования</span><span data-l="en">Local approvals cleared</span></li>
-      </ul>
-      <span class="st done"><span data-l="ru">Сделано</span><span data-l="en">Done</span></span>
-    </div>
-    <div class="stage">
-      <div class="no"><span data-l="ru">Этап 2</span><span data-l="en">Stage 2</span></div>
-      <div class="t"><span data-l="ru">Участок и проект</span><span data-l="en">Site and design</span></div>
-      <ul>
-        <li><span data-l="ru">Выбор и оформление участка</span><span data-l="en">Site selection and paperwork</span></li>
-        <li><span data-l="ru">Концепция, зонирование, посадка</span><span data-l="en">Concept, zoning, seating</span></li>
-        <li><span data-l="ru">Смета и график строительства</span><span data-l="en">Budget and build schedule</span></li>
-      </ul>
-      <span class="st"><span data-l="ru">В работе</span><span data-l="en">In progress</span></span>
-    </div>
-    <div class="stage">
-      <div class="no"><span data-l="ru">Этап 3</span><span data-l="en">Stage 3</span></div>
-      <div class="t"><span data-l="ru">Строительство и запуск</span><span data-l="en">Build and launch</span></div>
-      <ul>
-        <li><span data-l="ru">Стройка, кухня, оборудование</span><span data-l="en">Construction, kitchen, equipment</span></li>
-        <li><span data-l="ru">Найм и обучение смены</span><span data-l="en">Hiring and training the shift</span></li>
-        <li><span data-l="ru">Меню, бар, пред-открытие</span><span data-l="en">Menu, bar, soft opening</span></li>
-      </ul>
-      <span class="st"><span data-l="ru">Впереди</span><span data-l="en">Ahead</span></span>
-    </div>
-    <div class="stage">
-      <div class="no"><span data-l="ru">Этап 4</span><span data-l="en">Stage 4</span></div>
-      <div class="t"><span data-l="ru">Выход на мощность</span><span data-l="en">Reaching capacity</span></div>
-      <ul>
-        <li><span data-l="ru">Ивент-программа и сезонность</span><span data-l="en">Event programme and seasonality</span></li>
-        <li><span data-l="ru">Средний чек и загрузка смен</span><span data-l="en">Average cheque and shift load</span></li>
-        <li><span data-l="ru">Второй объект на острове</span><span data-l="en">A second site on the island</span></li>
-      </ul>
-      <span class="st"><span data-l="ru">Впереди</span><span data-l="en">Ahead</span></span>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="chapter" id="finance">
-  <div class="rail">
-    <div class="no">07</div>
-    <h2><span data-l="ru">Финансы</span><span data-l="en">Financials</span></h2>
-  </div>
-</section>
-
-<section class="next" style="padding-top:clamp(22px,3vw,36px)">
-  <div class="rail">
-    <p class="muted" style="max-width:52ch"><span data-l="ru">Раздел формируется. Структура соответствует инвестиционной модели группы.</span><span data-l="en">This section is in preparation. Its structure follows the group's investment model.</span></p>
-    <ul>
-      <li><i>01</i><b><span data-l="ru">Экономика объекта: средний чек, загрузка, себестоимость, Kitchen EBITDA</span><span data-l="en">Unit economics: average cheque, load, cost of sales, kitchen EBITDA</span></b></li>
-      <li><i>02</i><b><span data-l="ru">Финансовая модель на горизонтах 12 / 24 / 36 месяцев</span><span data-l="en">Financial model over 12 / 24 / 36 months</span></b></li>
-      <li><i>03</i><b><span data-l="ru">CAPEX и структура расходов инвестиций по этапам</span><span data-l="en">CAPEX and the breakdown of investment by stage</span></b></li>
-      <li><i>04</i><b><span data-l="ru">Потребность в финансировании и график траншей</span><span data-l="en">Funding requirement and tranche schedule</span></b></li>
-      <li><i>05</i><b><span data-l="ru">Структура сделки, доля инвестора, срок окупаемости</span><span data-l="en">Deal structure, investor share, payback period</span></b></li>
-    </ul>
-  </div>
-</section>
-
-
-
-<section class="chapter">
-  <div class="rail">
-    <div class="no">08</div>
-    <h2><span data-l="ru">Команда проекта</span><span data-l="en">The team</span></h2>
-  </div>
-</section>
-
-<section style="padding-top:clamp(22px,3vw,36px)">
-  <div class="rail">
-    <p class="eyebrow"><span data-l="ru">Кухня и бар</span><span data-l="en">Kitchen and bar</span></p>
-    <h2><span data-l="ru">Ключевые специалисты</span><span data-l="en">Key specialists</span></h2>
-    <div class="crew">
-      <article>
-        <img class="av" src="img/crew-lantos.jpg" alt="">
-        <div>
-        <div class="rl"><span data-l="ru">Бренд-шеф</span><span data-l="en">Brand chef</span></div>
-        <div class="nm"><span data-l="ru">Ангелос Лантос</span><span data-l="en">Angelos Lantos</span></div>
-        <p><span data-l="ru">17 лет в афинском Spondi — две звезды Michelin.</span><span data-l="en">17 years at Spondi, Athens — two Michelin stars.</span></p>
-        </div>
-      </article>
-      <article>
-        <img class="av" src="img/crew-pometkov.jpg" alt="">
-        <div>
-        <div class="rl"><span data-l="ru">Шеф-бармен</span><span data-l="en">Head bartender</span></div>
-        <div class="nm"><span data-l="ru">Рома Пометков</span><span data-l="en">Roma Pometkov</span></div>
-        <p><span data-l="ru">Экс-Public. Совладелец NAU, создатель бара The Nest.</span><span data-l="en">Ex-Public. Co-owner of NAU, founder of The Nest.</span></p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="team" style="padding-top:0">
-  <div class="rail">
-    <p class="eyebrow"><span data-l="ru">Команда</span><span data-l="en">Team</span></p>
-    <h2><span data-l="ru">Управляющая команда</span><span data-l="en">The management team</span></h2>
-    <p class="muted" style="margin-top:18px"><span data-l="ru">Основатели работают вместе с 2001 года.</span><span data-l="en">The founders have worked together since 2001.</span></p>
-
-    <div class="roster">
-      <div>
-        <div class="nm"><img src="img/team-1.jpg" alt=""><span data-l="ru">Борис Крупкин</span><span data-l="en">Boris Krupkin</span></div>
-        <div class="rl"><span data-l="ru">Совладелец, генеральный директор</span><span data-l="en">Co-owner, CEO</span></div>
-        <div class="cr"><span data-l="ru">«Чайная ложка», 2001–2008</span><span data-l="en">Chainaya Lozhka, 2001–2008</span></div>
-        <div class="sn"><span data-l="ru">с 2008</span><span data-l="en">since 2008</span></div>
-      </div>
-      <div>
-        <div class="nm"><img src="img/team-2.jpg" alt=""><span data-l="ru">Михаил Августин</span><span data-l="en">Mikhail Avgustin</span></div>
-        <div class="rl"><span data-l="ru">Совладелец, директор по развитию</span><span data-l="en">Co-owner, development director</span></div>
-        <div class="cr"><span data-l="ru">«Чайная ложка», 2001–2008</span><span data-l="en">Chainaya Lozhka, 2001–2008</span></div>
-        <div class="sn"><span data-l="ru">с 2008</span><span data-l="en">since 2008</span></div>
-      </div>
-      <div>
-        <div class="nm"><img src="img/team-6.jpg" alt=""><span data-l="ru">Виктория Артемьева</span><span data-l="en">Victoria Artemyeva</span></div>
-        <div class="rl"><span data-l="ru">Исполнительный директор</span><span data-l="en">Executive director</span></div>
-        <div class="cr"><span data-l="ru">20 лет в индустрии</span><span data-l="en">20 years in the industry</span></div>
-        <div class="sn"><span data-l="ru">с 2008</span><span data-l="en">since 2008</span></div>
-      </div>
-      <div>
-        <div class="nm"><img src="img/team-5.jpg" alt=""><span data-l="ru">Маргарита Даймонд</span><span data-l="en">Margarita Daimond</span></div>
-        <div class="rl"><span data-l="ru">Маркетинг и продукт</span><span data-l="en">Marketing and product</span></div>
-        <div class="cr"><span data-l="ru">15 лет в индустрии</span><span data-l="en">15 years in the industry</span></div>
-        <div class="sn"><span data-l="ru">с 2017</span><span data-l="en">since 2017</span></div>
-      </div>
-      <div>
-        <div class="nm"><img src="img/team-3.jpg" alt=""><span data-l="ru">Владимир Шамшур</span><span data-l="en">Vladimir Shamshur</span></div>
-        <div class="rl"><span data-l="ru">IT-директор</span><span data-l="en">IT director</span></div>
-        <div class="cr">ex-CTO Carl's Jr.</div>
-        <div class="sn"><span data-l="ru">с 2022</span><span data-l="en">since 2022</span></div>
       </div>
     </div>
   </div>
