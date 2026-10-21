@@ -465,6 +465,11 @@
   .herb-r2{right:-4%;top:clamp(14px,3vw,46px);width:clamp(150px,19vw,270px);opacity:.78}
   .herb-l2{left:-7%;bottom:-11%;width:clamp(130px,15vw,215px);opacity:.6;transform:scaleX(-1)}
   @media (max-width:820px){.herb{display:none}}
+  /* ---------- anchor offset under the sticky bar ---------- */
+  html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 78px);scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  section[id],div[id]{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 78px)}
+
   /* ---------- sources, folded away ---------- */
   details.src{margin-top:30px;border-top:1px solid var(--line-soft);padding-top:12px}
   details.src > summary{
@@ -867,7 +872,7 @@
   </div>
 </section>
 
-<section class="chapter">
+<section class="chapter" id="avli">
   <div class="rail">
     <div class="no">07</div>
     <h2><span data-l="ru">Кто мы на Бали</span><span data-l="en">Who we are in Bali</span></h2>
