@@ -457,7 +457,7 @@
   .crew .nm,.proof .t,.stage .t,.zone .t,.slot .t,.presswall .src{letter-spacing:-.025em}
   /* ---------- brand graphics: herb prints, bleeding off the edge ---------- */
   .herbhost{position:relative;overflow:hidden;isolation:isolate}
-  .herbhost > .rail,.herbhost > .fgrid{position:relative;z-index:1}
+  .herbhost > *:not(.herb){position:relative;z-index:1}
   .herb{position:absolute;z-index:0;pointer-events:none;user-select:none}
   .herb-r{right:-3%;top:clamp(10px,2vw,34px);width:clamp(190px,25vw,360px);opacity:.88}
   .herb-l{left:-6%;bottom:-9%;width:clamp(120px,14vw,205px);opacity:.68;transform:scaleX(-1)}
