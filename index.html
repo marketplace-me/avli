@@ -458,7 +458,7 @@
   /* ---------- brand graphics: herb prints, bleeding off the edge ---------- */
   .herbhost{position:relative;overflow:hidden;isolation:isolate}
   .herbhost > *:not(.herb){position:relative;z-index:1}
-  .herb{position:absolute;z-index:0;pointer-events:none;user-select:none}
+  .herb{position:absolute;z-index:0;pointer-events:none;user-select:none;mix-blend-mode:multiply}
   .herb-r{right:-2%;top:clamp(8px,1.6vw,26px);width:clamp(230px,31vw,470px);opacity:1}
   .herb-l{left:-7%;bottom:-8%;width:clamp(150px,17vw,260px);opacity:.85;transform:scaleX(-1)}
   .herb-f{right:3%;bottom:-16%;width:clamp(150px,17vw,250px);opacity:.95}
@@ -483,7 +483,7 @@
   details.src p{margin:12px 0 0}
   /* ---------- graphic band ---------- */
   .gband{position:relative;overflow:hidden;background:var(--ink-2);height:clamp(150px,19vw,240px)}
-  .gband img{position:absolute;width:auto;opacity:.95}
+  .gband img{position:absolute;width:auto;opacity:.95;mix-blend-mode:multiply}
   .gband .g1{left:-2%;bottom:-34%;height:150%}
   .gband .g2{left:38%;top:-30%;height:138%}
   .gband .g3{right:2%;bottom:-26%;height:132%}
