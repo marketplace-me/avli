@@ -23,6 +23,8 @@
 </style>
 </head>
 <body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Beach Club Bali</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Golos+Text:wght@400;500;600&display=swap">
@@ -181,6 +183,20 @@
   }
   .press a:hover{border-color:var(--sea);color:var(--sea)}
   .press a span{color:var(--sand-dim)}
+  .presswall{display:grid;gap:1px;background:var(--line-soft);border-block:1px solid var(--line-soft);margin-top:34px}
+  @media (min-width:820px){.presswall{grid-template-columns:repeat(3,1fr)}}
+  .presswall a{
+    display:flex;flex-direction:column;justify-content:space-between;gap:26px;
+    background:var(--ink);padding:26px 22px 22px;text-decoration:none;color:inherit;
+    transition:background .25s,color .25s;min-height:168px;
+  }
+  .presswall a:hover{background:var(--ink-2)}
+  .presswall .kd{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--sea)}
+  .presswall .src{font-family:var(--display);font-weight:300;font-size:clamp(23px,2.6vw,31px);line-height:1.12;letter-spacing:-.01em;margin-top:12px}
+  .presswall .dsc{font-size:13px;line-height:1.5;color:var(--sand-dim);margin-top:9px}
+  .presswall .go{display:flex;align-items:baseline;justify-content:space-between;gap:12px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;border-top:1px solid var(--line-soft);padding-top:13px}
+  .presswall .go i{font-style:normal;font-size:17px;line-height:1}
+  .presswall a:hover .go{color:var(--sea)}
   .gallery{display:grid;gap:14px;margin-top:40px}
   @media (min-width:700px){.gallery{grid-template-columns:repeat(2,1fr)}}
   @media (min-width:1040px){.gallery{grid-template-columns:repeat(3,1fr)}}
@@ -693,6 +709,16 @@
       </div>
     </div>
 
+    <p class="big" style="max-width:30ch;margin-top:clamp(40px,5vw,66px)"><span data-l="ru">Главную улицу Улувату застраивают так же, как в свое время Batu Bolong в Чангу и Kayu Aya в Семиньяке.</span><span data-l="en">Uluwatu's main street is being built out the way Batu Bolong in Canggu and Kayu Aya in Seminyak once were.</span></p>
+    <p class="muted" style="max-width:56ch;margin-top:-6px"><span data-l="ru">Дорога к океану превращается в самостоятельную торговую улицу: отели, рестораны, ритейл. Деньги в район уже зашли — ниже один из строящихся объектов.</span><span data-l="en">The road to the ocean is turning into a retail street in its own right: hotels, restaurants, shops. Capital is already in the district — one project under construction below.</span></p>
+
+    <div class="kpi" style="margin-top:28px">
+      <div><div class="n">250 <small><span data-l="ru">номеров</span><span data-l="en">rooms</span></small></div><div class="k"><span data-l="ru">отель в стройке на главной улице</span><span data-l="en">hotel under construction on the main street</span></div></div>
+      <div><div class="n">12 135 <small>м²</small></div><div class="k"><span data-l="ru">участок под проект</span><span data-l="en">its site</span></div></div>
+      <div><div class="n">12</div><div class="k"><span data-l="ru">коммерческих помещений в составе</span><span data-l="en">commercial units inside it</span></div></div>
+      <div><div class="n">6 <small><span data-l="ru">из 12</span><span data-l="en">of 12</span></small></div><div class="k"><span data-l="ru">выкуплены до сдачи</span><span data-l="en">taken before hand-over</span></div></div>
+    </div>
+
     <div class="proof" style="margin-top:36px">
       <div>
         <div class="n"><span data-l="ru">Регулирование</span><span data-l="en">Regulation</span></div>
@@ -711,7 +737,7 @@
       </div>
     </div>
 
-    <p class="srcnote"><span data-l="ru">Источники: BPS Bali и Rise Real Bali (турпоток), Mordor Intelligence (рынок общепита), The Honeycombers (пороги входа), Bright Solution Property (земля и доходность).</span><span data-l="en">Sources: BPS Bali and Rise Real Bali (arrivals), Mordor Intelligence (foodservice market), The Honeycombers (entry thresholds), Bright Solution Property (land and yields).</span></p>
+    <p class="srcnote"><span data-l="ru">Источники: BPS Bali и Rise Real Bali (турпоток), Mordor Intelligence (рынок общепита), The Honeycombers (пороги входа), Bright Solution Property (земля и доходность), Mirah Investment & Development, брошюра SOMOSHOTELS Uluwatu, март 2026 (застройка главной улицы).</span><span data-l="en">Sources: BPS Bali and Rise Real Bali (arrivals), Mordor Intelligence (foodservice market), The Honeycombers (entry thresholds), Bright Solution Property (land and yields), Mirah Investment & Development, SOMOSHOTELS Uluwatu brochure, March 2026 (main-street development).</span></p>
   </div>
 </section>
 
@@ -801,9 +827,6 @@
       <div><span data-l="ru">Архитектура —</span><span data-l="en">Architecture —</span> <b>DA BUREAU</b></div>
       <div><span data-l="ru">Печату, Южная Кута, Бадунг</span><span data-l="en">Pecatu, South Kuta, Badung</span></div>
     </div>
-    <div class="press" style="margin-top:22px">
-      <a href="https://avlibali.com" target="_blank" rel="noopener">avlibali.com <span>↗</span></a>
-    </div>
   </div>
 </section>
 
@@ -831,10 +854,33 @@
         <div class="t"><span data-l="ru">Узнаваемость</span><span data-l="en">Visibility</span></div>
         <p><span data-l="ru">Публикации в профильной прессе Индонезии в первые месяцы работы.</span><span data-l="en">Covered by Indonesian trade and lifestyle media within the first months.</span></p>
       </div>
-    <div class="press" style="margin-top:22px">
-          <a href="https://harpersbazaar.co.id/articles/read/10/2025/23535/sentuhan-modern-yunani-hadir-dalam-courtyard-mewah-di-uluwatu" target="_blank" rel="noopener">Harper's Bazaar ID <span>↗</span></a>
-          <a href="https://casaindonesia.com/article/read/10/2025/8525/avli-bali-modern-greek-courtyard-di-uluwatu" target="_blank" rel="noopener">Casa Indonesia <span>↗</span></a>
     </div>
+
+    <div class="presswall">
+      <a href="https://harpersbazaar.co.id/articles/read/10/2025/23535/sentuhan-modern-yunani-hadir-dalam-courtyard-mewah-di-uluwatu" target="_blank" rel="noopener">
+        <div>
+          <div class="kd"><span data-l="ru">Пресса</span><span data-l="en">Press</span></div>
+          <div class="src">Harper's Bazaar<br>Indonesia</div>
+          <div class="dsc"><span data-l="ru">Современная Греция во дворе в Улувату</span><span data-l="en">Modern Greece in an Uluwatu courtyard</span></div>
+        </div>
+        <div class="go"><span data-l="ru">Читать статью</span><span data-l="en">Read the feature</span><i>↗</i></div>
+      </a>
+      <a href="https://casaindonesia.com/article/read/10/2025/8525/avli-bali-modern-greek-courtyard-di-uluwatu" target="_blank" rel="noopener">
+        <div>
+          <div class="kd"><span data-l="ru">Пресса</span><span data-l="en">Press</span></div>
+          <div class="src">Casa<br>Indonesia</div>
+          <div class="dsc"><span data-l="ru">Архитектура двора и открытой кухни</span><span data-l="en">The courtyard and open-kitchen architecture</span></div>
+        </div>
+        <div class="go"><span data-l="ru">Читать статью</span><span data-l="en">Read the feature</span><i>↗</i></div>
+      </a>
+      <a href="https://avlibali.com" target="_blank" rel="noopener">
+        <div>
+          <div class="kd"><span data-l="ru">Сайт</span><span data-l="en">Website</span></div>
+          <div class="src">avlibali<br>.com</div>
+          <div class="dsc"><span data-l="ru">Меню, зал и бронирование</span><span data-l="en">Menu, the room and bookings</span></div>
+        </div>
+        <div class="go"><span data-l="ru">Открыть сайт</span><span data-l="en">Open the site</span><i>↗</i></div>
+      </a>
     </div>
 
   </div>
@@ -914,7 +960,6 @@
 
 <div class="band">
   <img src="img/o-full.jpg" alt="Avli — полный зал" loading="lazy">
-  <div class="cap"><div class="rail"><p><span data-l="ru">Загрузка зала в будний вечер</span><span data-l="en">Floor load on a weekday evening</span></p></div></div>
 </div>
 
 <section class="avli">
@@ -929,32 +974,8 @@
         <figcaption><span data-l="ru">Открытый огонь</span><span data-l="en">Open fire</span></figcaption>
       </figure>
       <figure>
-        <img src="img/a-fire.jpg" alt="Avli — пита" loading="lazy">
-        <figcaption><span data-l="ru">Пита из печи</span><span data-l="en">Pita from the oven</span></figcaption>
-      </figure>
-      <figure>
-        <img src="img/n-grill.jpg" alt="Avli — гриль" loading="lazy">
-        <figcaption><span data-l="ru">Креветки на углях</span><span data-l="en">Prawns over coals</span></figcaption>
-      </figure>
-      <figure>
-        <img src="img/a-mezze.jpg" alt="Avli — мезе" loading="lazy">
-        <figcaption><span data-l="ru">Стол на компанию</span><span data-l="en">A table for sharing</span></figcaption>
-      </figure>
-      <figure>
-        <img src="img/n-tuna.jpg" alt="Avli — тунец" loading="lazy">
-        <figcaption><span data-l="ru">Тунец с манго</span><span data-l="en">Tuna with mango</span></figcaption>
-      </figure>
-      <figure>
-        <img src="img/a-interior.jpg" alt="Avli — интерьер" loading="lazy">
-        <figcaption><span data-l="ru">Светлый зал</span><span data-l="en">The pale room</span></figcaption>
-      </figure>
-      <figure>
-        <img src="img/n-chef.jpg" alt="Avli — шеф" loading="lazy">
+        <img src="img/n-chef.jpg" alt="Avli — команда кухни" loading="lazy">
         <figcaption><span data-l="ru">Местная команда кухни</span><span data-l="en">The local kitchen team</span></figcaption>
-      </figure>
-      <figure>
-        <img src="img/a-guest.jpg" alt="Avli — гость" loading="lazy">
-        <figcaption><span data-l="ru">Публика проекта</span><span data-l="en">The room</span></figcaption>
       </figure>
     </div>
   </div>
