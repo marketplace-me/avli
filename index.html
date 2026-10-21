@@ -77,7 +77,7 @@
 
   /* ---------- layout ---------- */
   .rail{max-width:var(--rail);margin:0 auto;padding-inline:24px}
-  section{padding-block:clamp(64px,9vw,120px)}
+  section{padding-block:clamp(44px,6vw,88px)}
   .eyebrow{
     font-size:11px;letter-spacing:.24em;text-transform:uppercase;
     color:var(--sea);margin:0 0 22px;font-weight:500;
@@ -117,8 +117,8 @@
   /* ---------- statement ---------- */
   .statement{border-bottom:1px solid var(--line-soft)}
   .big{
-    font-family:var(--display);font-weight:200;font-size:clamp(24px,3.4vw,40px);
-    line-height:1.28;max-width:24ch;margin:0 0 28px;
+    font-family:var(--display);font-weight:200;font-size:clamp(28px,4.6vw,56px);
+    line-height:1.16;max-width:26ch;margin:0 0 26px;letter-spacing:-.012em;
   }
   .statement .cols{display:grid;gap:28px;margin-top:8px}
   @media (min-width:860px){.statement .cols{grid-template-columns:1fr 1fr;gap:48px}}
@@ -128,7 +128,7 @@
   @media (min-width:760px){.figures{grid-template-columns:repeat(5,1fr)}}
   .fig{background:var(--ink);padding:26px 20px 24px}
   .fig .n{
-    font-family:var(--display);font-weight:200;font-size:clamp(32px,4.4vw,50px);
+    font-family:var(--display);font-weight:200;font-size:clamp(34px,4.8vw,56px);
     line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums;
   }
   .fig .k{margin-top:10px;font-size:12px;line-height:1.45;color:var(--sand-dim);letter-spacing:.04em}
@@ -149,7 +149,7 @@
   }
 
   /* ---------- team ---------- */
-  .roster{margin-top:40px;border-top:1px solid var(--line-soft)}
+  .roster{margin-top:32px;border-top:1px solid var(--line-soft)}
   .roster > div{
     display:grid;grid-template-columns:1fr;gap:7px;align-items:center;
     padding:16px 0;border-bottom:1px solid var(--line-soft);
@@ -221,7 +221,7 @@
   }
 
   /* ---------- crew ---------- */
-  .crew{display:grid;gap:28px;margin-top:40px}
+  .crew{display:grid;gap:28px;margin-top:34px}
   @media (min-width:760px){.crew{grid-template-columns:repeat(2,1fr);max-width:860px}}
   .crew article{border-top:2px solid var(--sea);padding-top:22px;display:grid;grid-template-columns:116px 1fr;gap:22px;align-items:start}
   .crew .av{width:116px;height:116px;border-radius:50%;object-fit:cover;background:var(--ink-2)}
@@ -235,7 +235,7 @@
   .crew p{font-size:14px;line-height:1.55;color:var(--sand-dim);margin:10px 0 0}
 
   /* ---------- proof ---------- */
-  .proof{display:grid;gap:1px;background:var(--line-soft);border-block:1px solid var(--line-soft);margin-top:40px}
+  .proof{display:grid;gap:1px;background:var(--line-soft);border-block:1px solid var(--line-soft);margin-top:34px}
   @media (min-width:860px){.proof{grid-template-columns:repeat(3,1fr)}}
   .proof > div{background:var(--ink);padding:26px 22px 28px}
   .proof .n{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--sea)}
@@ -311,7 +311,7 @@
   /* ---------- footer ---------- */
   footer{border-top:1px solid var(--line-soft);padding-block:56px 64px}
   .fgrid{display:grid;gap:26px}
-  @media (min-width:760px){.fgrid{grid-template-columns:1.2fr 1fr 1fr}}
+  @media (min-width:760px){.fgrid{grid-template-columns:1.1fr 1fr;max-width:760px}}
   .fgrid .l{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sea);margin-bottom:12px}
   .fgrid .v{font-size:15px;line-height:1.7}
   .fgrid .v .muted{display:block;font-size:13.5px}
@@ -322,10 +322,10 @@
   @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
   /* ---------- chapter dividers ---------- */
-  .chapter{border-top:1px solid var(--navy);padding-block:clamp(40px,5vw,66px) 0}
+  .chapter{border-top:1px solid var(--navy);padding-block:clamp(30px,3.6vw,50px) 0}
   .chapter .rail{display:flex;align-items:baseline;gap:clamp(14px,3vw,36px);flex-wrap:wrap}
   .chapter .no{font-family:var(--display);font-weight:200;font-size:clamp(26px,3.4vw,44px);line-height:1;color:var(--sea);font-variant-numeric:tabular-nums}
-  .chapter h2{font-size:clamp(28px,4.6vw,54px)}
+  .chapter h2{font-size:clamp(30px,5vw,60px)}
 
   /* ---------- brief (deal card) ---------- */
   .brief{margin-top:36px;border-top:1px solid var(--line)}
@@ -342,7 +342,7 @@
   }
 
   /* ---------- charts ---------- */
-  .figblock{margin-top:40px}
+  .figblock{margin-top:34px}
   .figblock .cap{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--sea);margin-bottom:6px}
   .figblock .sub{font-size:12.5px;color:var(--sand-dim);margin:0 0 22px}
   .bars{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,2.2vw,26px)}
@@ -374,7 +374,7 @@
   .tbl .dim{color:var(--sand-dim)}
 
   /* ---------- stages ---------- */
-  .stages{display:grid;gap:1px;background:var(--line-soft);border-block:1px solid var(--line-soft);margin-top:40px}
+  .stages{display:grid;gap:1px;background:var(--line-soft);border-block:1px solid var(--line-soft);margin-top:32px}
   @media (min-width:760px){.stages{grid-template-columns:repeat(2,1fr)}}
   @media (min-width:1080px){.stages{grid-template-columns:repeat(4,1fr)}}
   .stage{background:var(--ink);padding:26px 22px 28px;display:flex;flex-direction:column;gap:12px}
@@ -405,8 +405,8 @@
   .bars.many .yr{font-size:10.5px;letter-spacing:.04em}
   .kpi{display:grid;gap:1px;background:var(--line-soft);border-block:1px solid var(--line-soft);grid-template-columns:repeat(2,1fr)}
   @media (min-width:760px){.kpi{grid-template-columns:repeat(4,1fr)}}
-  .kpi > div{background:var(--ink);padding:26px 20px 28px}
-  .kpi .n{font-family:var(--display);font-weight:200;font-size:clamp(26px,3.4vw,40px);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+  .kpi > div{background:var(--ink);padding:28px 20px 30px}
+  .kpi .n{font-family:var(--display);font-weight:200;font-size:clamp(30px,4vw,50px);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
   .kpi .n small{font-size:.5em;letter-spacing:.1em;text-transform:uppercase;color:var(--sand-dim);display:block;margin-top:10px;font-family:var(--ui);font-weight:500}
   .kpi .k{margin-top:12px;font-size:12px;line-height:1.45;color:var(--sand-dim)}
   .near{display:grid;gap:0;margin-top:34px;border-top:1px solid var(--line-soft)}
@@ -456,29 +456,29 @@
   </div>
 </section>
 
-<div class="kpi" style="margin-top:clamp(22px,3vw,36px)">
+<div class="kpi" style="margin-top:clamp(18px,2.4vw,30px)">
   <div><div class="n">—<small><span data-l="ru">уточняется</span><span data-l="en">tbd</span></small></div><div class="k"><span data-l="ru">Объем инвестиций</span><span data-l="en">Investment required</span></div></div>
   <div><div class="n">—<small><span data-l="ru">уточняется</span><span data-l="en">tbd</span></small></div><div class="k"><span data-l="ru">Доля инвестора</span><span data-l="en">Investor share</span></div></div>
   <div><div class="n">—<small><span data-l="ru">уточняется</span><span data-l="en">tbd</span></small></div><div class="k"><span data-l="ru">Срок окупаемости</span><span data-l="en">Payback period</span></div></div>
   <div><div class="n">—<small><span data-l="ru">уточняется</span><span data-l="en">tbd</span></small></div><div class="k"><span data-l="ru">Доходность на вложенный капитал</span><span data-l="en">Return on capital</span></div></div>
 </div>
 
-<section style="padding-top:clamp(28px,4vw,48px)">
+<section style="padding-top:clamp(20px,2.8vw,36px)">
   <div class="rail">
     <div class="figblock" style="margin-top:0">
       <div class="cap"><span data-l="ru">Куда идут деньги</span><span data-l="en">Use of funds</span></div>
       <p class="sub"><span data-l="ru">Доли уточняются после сметы.</span><span data-l="en">Shares to be fixed once the budget is set.</span></p>
-      <div class="hbars">
-        <div><span data-l="ru">Участок и строительство</span><span data-l="en">Land and construction</span><div class="track"></div><div class="val">—</div></div>
-        <div><span data-l="ru">Кухня и оборудование</span><span data-l="en">Kitchen and equipment</span><div class="track"></div><div class="val">—</div></div>
-        <div><span data-l="ru">Запуск и маркетинг</span><span data-l="en">Launch and marketing</span><div class="track"></div><div class="val">—</div></div>
-        <div><span data-l="ru">Оборотный капитал</span><span data-l="en">Working capital</span><div class="track"></div><div class="val">—</div></div>
+      <div class="near" style="margin-top:18px">
+        <div><span data-l="ru">Участок и строительство</span><span data-l="en">Land and construction</span><span class="t">—</span></div>
+        <div><span data-l="ru">Кухня и оборудование</span><span data-l="en">Kitchen and equipment</span><span class="t">—</span></div>
+        <div><span data-l="ru">Запуск и маркетинг</span><span data-l="en">Launch and marketing</span><span class="t">—</span></div>
+        <div><span data-l="ru">Оборотный капитал первого сезона</span><span data-l="en">First-season working capital</span><span class="t">—</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<section style="padding-top:clamp(22px,3vw,36px);padding-bottom:0">
+<section style="padding-top:clamp(14px,2vw,24px);padding-bottom:0">
   <div class="rail">
     <p class="muted" style="max-width:52ch"><span data-l="ru">Четыре этапа. Первый закрыт на проекте Avli.</span><span data-l="en">Four stages. The first is closed on the Avli project.</span></p>
   </div>
@@ -533,7 +533,7 @@
   </div>
 </section>
 
-<section style="padding-top:clamp(22px,3vw,36px)">
+<section style="padding-top:clamp(18px,2.4vw,30px)">
   <div class="rail">
     <p class="big" style="max-width:22ch"><span data-l="ru">Остров с круглогодичным спросом и доходностью выше европейской.</span><span data-l="en">An island with year-round demand and yields above Europe's.</span></p>
 
@@ -596,14 +596,14 @@
   </div>
 </section>
 
-<div class="kpi" style="margin-top:clamp(22px,3vw,36px)">
+<div class="kpi" style="margin-top:clamp(18px,2.4vw,30px)">
   <div><div class="n">288 <small><span data-l="ru">млн человек</span><span data-l="en">million people</span></small></div><div class="k"><span data-l="ru">4-е место в мире по населению</span><span data-l="en">4th largest population in the world</span></div></div>
   <div><div class="n">+52%</div><div class="k"><span data-l="ru">рост прямых инвестиций за 2024 год</span><span data-l="en">growth in direct investment in 2024</span></div></div>
   <div><div class="n">5-я</div><div class="k"><span data-l="ru">экономика мира к 2045 году</span><span data-l="en">largest economy in the world by 2045</span></div></div>
   <div><div class="n">17 000</div><div class="k"><span data-l="ru">островов, 1,9 млн км²</span><span data-l="en">islands, 1.9m km²</span></div></div>
 </div>
 
-<section style="padding-top:clamp(28px,4vw,48px)" id="market">
+<section style="padding-top:clamp(20px,2.8vw,36px)" id="market">
   <div class="rail">
     <p class="big" style="max-width:24ch"><span data-l="ru">Ресторанный рынок Индонезии почти удвоится за пять лет.</span><span data-l="en">Indonesia's restaurant market nearly doubles in five years.</span></p>
     <div class="figblock" style="margin-top:0">
@@ -624,7 +624,7 @@
   </div>
 </section>
 
-<section style="padding-top:clamp(22px,3vw,36px)">
+<section style="padding-top:clamp(18px,2.4vw,30px)">
   <div class="rail">
     <div class="proof" style="margin-top:0">
       <div>
@@ -667,7 +667,7 @@
   </div>
 </section>
 
-<section style="padding-top:clamp(22px,3vw,36px)">
+<section style="padding-top:clamp(18px,2.4vw,30px)">
   <div class="rail">
     <p class="big" style="max-width:22ch"><span data-l="ru">Район, где за три года собрался весь премиальный досуг острова.</span><span data-l="en">The district where the island's premium leisure has gathered in three years.</span></p>
 
@@ -693,7 +693,7 @@
       </div>
     </div>
 
-    <div class="proof" style="margin-top:46px">
+    <div class="proof" style="margin-top:36px">
       <div>
         <div class="n"><span data-l="ru">Регулирование</span><span data-l="en">Regulation</span></div>
         <div class="t"><span data-l="ru">Бадунг вне моратория</span><span data-l="en">Badung outside the moratorium</span></div>
@@ -721,7 +721,7 @@
     <h2><span data-l="ru">Кто стоит за проектом</span><span data-l="en">Who stands behind it</span></h2>
   </div>
 </section>
-<section style="padding-top:clamp(22px,3vw,36px)">
+<section style="padding-top:clamp(18px,2.4vw,30px)">
   <div class="rail">
     <p class="eyebrow"><span data-l="ru">Кухня и бар</span><span data-l="en">Kitchen and bar</span></p>
     <h2><span data-l="ru">Ключевые специалисты</span><span data-l="en">Key specialists</span></h2>
@@ -1101,7 +1101,6 @@
           <span class="muted" data-l="ru">Добавим здесь</span><span class="muted" data-l="en">To be added</span>
         </div>
       </div>
-      <div></div>
     </div>
     <div class="copy"><span data-l="ru">Материал подготовлен для потенциальных инвесторов. Фотографии — объекты группы, включая Avli, Улувату.</span><span data-l="en">Prepared for prospective investors. Photography — the group's venues, including Avli, Uluwatu.</span></div>
   </div>
