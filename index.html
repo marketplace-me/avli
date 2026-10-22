@@ -164,7 +164,7 @@
     display:flex;align-items:center;gap:18px;
   }
   .roster .nm img{
-    width:84px;height:84px;flex:none;border-radius:50%;object-fit:cover;
+    width:88px;height:88px;flex:none;border-radius:2px;object-fit:cover;object-position:center top;
     background:var(--ink-2);filter:saturate(.92);
   }
   .roster .rl{font-size:13.5px;color:var(--sand-dim)}
@@ -241,10 +241,10 @@
   /* ---------- crew ---------- */
   .crew{display:grid;gap:28px;margin-top:34px}
   @media (min-width:760px){.crew{grid-template-columns:repeat(2,1fr);max-width:860px}}
-  .crew article{border-top:2px solid var(--sea);padding-top:22px;display:grid;grid-template-columns:116px 1fr;gap:22px;align-items:start}
-  .crew .av{width:116px;height:116px;border-radius:50%;object-fit:cover;background:var(--ink-2)}
+  .crew article{border-top:2px solid var(--sea);padding-top:22px;display:grid;grid-template-columns:132px 1fr;gap:24px;align-items:start}
+  .crew .av{width:132px;height:160px;border-radius:2px;object-fit:cover;object-position:center top;background:var(--ink-2)}
   .crew .mono{
-    width:116px;height:116px;border-radius:50%;border:1px solid var(--line);
+    width:132px;height:160px;border-radius:2px;border:1px solid var(--line);
     display:flex;align-items:center;justify-content:center;
     font-family:var(--display);font-weight:500;font-size:19px;color:var(--sea);letter-spacing:.04em;
   }
@@ -1350,7 +1350,6 @@
       <div>
         <div class="l"><span data-l="ru">Контакты</span><span data-l="en">Contacts</span></div>
         <div class="v">
-          <span data-l="ru">Маргарита Даймонд — маркетинг и продукт</span><span data-l="en">Margarita Daimond — marketing and product</span><br>
           <span class="muted" data-l="ru">Телефон и почта — добавим здесь</span><span class="muted" data-l="en">Phone and email to be added</span>
         </div>
       </div>
