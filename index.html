@@ -300,6 +300,14 @@
   .reel figcaption b{display:block;color:var(--paper);font-weight:500;font-size:13px;margin-bottom:3px}
   .reels-note{margin-top:20px;font-size:12px;color:rgba(255,255,255,.55);letter-spacing:.05em}
 
+  .landvid{display:grid;gap:clamp(20px,3vw,44px);margin-top:30px;align-items:center}
+  @media (min-width:860px){.landvid{grid-template-columns:minmax(260px,360px) 1fr}}
+  .landvid .rv{border:1px solid var(--line-soft);background:var(--ink-2)}
+  .landvid .rv video{background:var(--ink-2)}
+  .landvid .cap2{font-size:15px;line-height:1.55;color:var(--sand-dim);max-width:46ch}
+  .landvid .cap2 b{display:block;font-family:var(--display);font-weight:500;font-size:clamp(20px,2.4vw,28px);
+    line-height:1.2;letter-spacing:-.026em;color:var(--sand);margin-bottom:12px}
+
   .band{position:relative;isolation:isolate;background:var(--navy)}
   .band img{width:100%;height:clamp(320px,62vh,660px);object-fit:cover}
   .band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,25,55,0) 42%,rgba(0,25,55,.85) 100%)}
@@ -1063,6 +1071,42 @@
         </div>
       </div>
     </div>
+
+
+    <div class="figblock" style="margin-top:clamp(44px,5.4vw,76px)">
+      <div class="cap"><span data-l="ru">Участок · в работе</span><span data-l="en">The plot · in progress</span></div>
+      <p class="sub"><span data-l="ru">Пекату, западный Букит. 8°48′51″ ю.ш. 115°05′27″ в.д.</span><span data-l="en">Pecatu, western Bukit. 8°48′51″S 115°05′27″E.</span></p>
+    </div>
+
+    <div class="kpi" style="margin-top:0">
+      <div><div class="n">42,8 <small><span data-l="ru">ара</span><span data-l="en">are</span></small></div><div class="k"><span data-l="ru">4 280 м² одним массивом</span><span data-l="en">4,280 m² in a single plot</span></div></div>
+      <div><div class="n">freehold</div><div class="k"><span data-l="ru">полная собственность, не лизхолд</span><span data-l="en">full ownership, not leasehold</span></div></div>
+      <div><div class="n">3 <small><span data-l="ru">млрд IDR / ар</span><span data-l="en">bn IDR / are</span></small></div><div class="k"><span data-l="ru">30 млн IDR за м²</span><span data-l="en">30m IDR per m²</span></div></div>
+      <div><div class="n">128,4 <small><span data-l="ru">млрд IDR</span><span data-l="en">bn IDR</span></small></div><div class="k"><span data-l="ru">цена участка целиком, около 7,2 млн долларов по курсу октября 2026</span><span data-l="en">total plot price, about USD 7.2m at the October 2026 rate</span></div></div>
+    </div>
+
+    <div class="near" style="margin-top:28px">
+      <div><span>Suluban · Blue Point</span><span class="t">270 <span data-l="ru">м</span><span data-l="en">m</span></span></div>
+      <div><span>Single Fin</span><span class="t">340 <span data-l="ru">м</span><span data-l="en">m</span></span></div>
+      <div><span>Ulu Cliffhouse</span><span class="t">640 <span data-l="ru">м</span><span data-l="en">m</span></span></div>
+      <div><span data-l="ru">Главная улица, Jl. Labuan Sait</span><span data-l="en">Main street, Jl. Labuan Sait</span><span class="t">780 <span data-l="ru">м</span><span data-l="en">m</span></span></div>
+      <div><span data-l="ru">Пляж Паданг-Паданг</span><span data-l="en">Padang Padang Beach</span><span class="t">1,4 <span data-l="ru">км</span><span data-l="en">km</span></span></div>
+      <div><span data-l="ru">Храм Улувату</span><span data-l="en">Uluwatu Temple</span><span class="t">1,8 <span data-l="ru">км</span><span data-l="en">km</span></span></div>
+    </div>
+
+    <div class="landvid">
+      <figure class="reel" style="margin:0">
+        <div class="rv">
+          <video src="img/v-land.mp4" poster="img/v-land.jpg" autoplay muted loop playsinline preload="none"></video>
+        </div>
+      </figure>
+      <div class="cap2">
+        <b><span data-l="ru">Съемка участка</span><span data-l="en">The plot on camera</span></b>
+        <span data-l="ru">Ровная площадка одним массивом, выход к обрыву с видом на океан, по дальней границе — подпорная стена соседнего участка. Снято на месте в октябре 2026.</span><span data-l="en">A single level plot running to the cliff edge with an ocean view; the far boundary is the neighbouring plot's retaining wall. Filmed on site in October 2026.</span>
+      </div>
+    </div>
+
+    <p class="sub" style="margin-top:18px"><span data-l="ru">Участок дороже средней земли на Буките: freehold и расположение в 270 метрах от Сулубана. Диапазон 300–950 USD за м² выше относится к лизхолду и к участкам вдали от обрыва.</span><span data-l="en">The plot is priced above the Bukit average: it is freehold and sits 270 m from Suluban. The 300–950 USD per m² range quoted above refers to leasehold and to plots away from the cliff.</span></p>
 
     <details class="src">
       <summary><span data-l="ru">Источники</span><span data-l="en">Sources</span></summary>
