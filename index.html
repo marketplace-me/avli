@@ -1350,6 +1350,15 @@
 </footer>
 
 <script>
+  /* always open at the top: no browser scroll restoration, no stale #anchor */
+  (function () {
+    try { if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; } catch (e) {}
+    if (!location.hash) {
+      window.addEventListener('load', function () { window.scrollTo(0, 0); });
+      window.scrollTo(0, 0);
+    }
+  })();
+
   (function () {
     var body = document.body;
     var ru = document.getElementById('btn-ru');
