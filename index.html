@@ -509,14 +509,11 @@
   .quiet .big{font-size:clamp(28px,3.9vw,50px);line-height:1.1;max-width:26ch;margin-bottom:0}
   .quiet .after{margin-top:20px;font-size:18px;line-height:1.55;color:var(--sand-dim);max-width:54ch}
 
-  /* ---------- gallery: one large, two small ---------- */
+  /* ---------- gallery: three in a row, equal ---------- */
   .gallery.uneven{grid-template-columns:1fr}
-  @media (min-width:860px){
-    .gallery.uneven{grid-template-columns:1.55fr 1fr;grid-template-rows:auto auto;gap:16px;align-items:start}
-    .gallery.uneven figure:nth-child(1){grid-row:1 / span 2}
-    .gallery.uneven figure:nth-child(1) img{aspect-ratio:3/4;height:auto}
-    .gallery.uneven figure:nth-child(2) img,.gallery.uneven figure:nth-child(3) img{aspect-ratio:2/3;object-position:center top}
-  }
+  @media (min-width:700px){.gallery.uneven{grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}}
+  .gallery.uneven img{aspect-ratio:3/4;object-position:center top}
+  .gallery.uneven figure:nth-child(1) img{object-position:center center}
 
   /* ---------- a photo that breaks the column ---------- */
   .bleed-r{position:relative}
@@ -694,11 +691,6 @@
         </div>
       </div>
     </div>
-
-    <details class="src" style="margin-top:30px">
-      <summary><span data-l="ru">Оговорки</span><span data-l="en">Disclaimer</span></summary>
-      <p class="srcnote" style="margin-top:12px;max-width:86ch"><span data-l="ru">Документ носит предварительный характер и не является офертой. Прогноз — оценка оператора, не гарантия. Налоги на дивиденды не учтены. Структура владения землёй для иностранного инвестора (PT PMA / HGB) уточняется юридически.</span><span data-l="en">This document is preliminary and does not constitute an offer. The forecast is the operator's estimate, not a guarantee. Dividend taxes are not included. The land-ownership structure for a foreign investor (PT PMA / HGB) is still being settled with counsel.</span></p>
-    </details>
   </div>
 </section>
 
