@@ -234,8 +234,8 @@
   /* ---------- specs ---------- */
   .specs{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
   .specs span{
-    font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--sand-dim);
-    border:1px solid var(--line-soft);border-radius:999px;padding:4px 10px;
+    font-size:13px;font-weight:500;letter-spacing:.02em;color:var(--sand);
+    border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-variant-numeric:tabular-nums;
   }
 
   /* ---------- crew ---------- */
@@ -375,7 +375,7 @@
   .figblock .sub{font-size:12.5px;color:var(--sand-dim);margin:0 0 22px}
   .bars{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,2.2vw,26px)}
   .bars .col{display:grid;grid-template-rows:auto clamp(130px,19vw,200px) auto;gap:10px}
-  .bars .vl{font-family:var(--mono);font-weight:500;font-size:clamp(17px,2.1vw,24px);line-height:1;font-variant-numeric:tabular-nums}
+  .bars .vl{font-family:var(--mono);font-weight:500;font-size:clamp(19px,2.3vw,28px);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
   .bars .bw{display:flex;align-items:flex-end}
   .bars .bar{width:100%;background:var(--sea);border-radius:4px 4px 0 0}
   .bars .col.fc .bar{
@@ -385,10 +385,10 @@
   .bars .yr{font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--sand-dim);border-top:1px solid var(--line);padding-top:9px}
 
   .hbars{display:grid;gap:11px;margin-top:4px}
-  .hbars > div{display:grid;grid-template-columns:minmax(96px,30%) 1fr auto;gap:14px;align-items:center;font-size:13.5px}
+  .hbars > div{display:grid;grid-template-columns:minmax(96px,28%) 1fr auto;gap:16px;align-items:center;font-size:14px}
   .hbars .track{height:9px;background:var(--line-soft);border-radius:999px;overflow:hidden}
   .hbars .fill{height:100%;background:var(--sea);border-radius:999px}
-  .hbars .val{font-size:12.5px;color:var(--sand-dim);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .hbars .val{font-size:clamp(15px,1.3vw,18px);font-weight:500;color:var(--sand);letter-spacing:-.015em;font-variant-numeric:tabular-nums;white-space:nowrap}
 
   /* ---------- table ---------- */
   .tblwrap{overflow-x:auto;margin-top:26px}
@@ -429,7 +429,7 @@
   .srcnote a{color:var(--sand-dim)}
 
   .bars.many{grid-template-columns:repeat(9,1fr);gap:clamp(5px,.9vw,12px)}
-  .bars.many .vl{font-size:clamp(12px,1.25vw,16px)}
+  .bars.many .vl{font-size:clamp(14px,1.5vw,20px);letter-spacing:-.02em}
   .bars.many .yr{font-size:10.5px;letter-spacing:.04em}
   .kpi{display:grid;gap:1px;background:var(--line-soft);border-block:1px solid var(--line-soft);grid-template-columns:repeat(2,1fr)}
   @media (min-width:760px){.kpi{grid-template-columns:repeat(4,1fr)}}
@@ -439,8 +439,8 @@
   .kpi .k{margin-top:12px;font-size:12px;line-height:1.45;color:var(--sand-dim)}
   .near{display:grid;gap:0;margin-top:34px;border-top:1px solid var(--line-soft)}
   @media (min-width:820px){.near{grid-template-columns:1fr 1fr;column-gap:56px}}
-  .near > div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line-soft);font-size:14.5px}
-  .near .t{color:var(--sand-dim);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .near > div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-soft);font-size:15px}
+  .near .t{color:var(--sand);font-weight:500;font-size:clamp(18px,1.7vw,23px);letter-spacing:-.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
 
   /* ---------- brand layer: CoFo-style micro-typography ---------- */
 
@@ -458,7 +458,7 @@
   .presswall .go{font-size:10.5px;letter-spacing:.12em}
   .near .t,.hbars .val,.bars .yr{letter-spacing:.02em}
   h3{font-weight:500;letter-spacing:-.01em}
-  .specs span,.chips span{letter-spacing:.02em;font-size:12px}
+  .chips span{letter-spacing:.02em;font-size:12.5px}
   .crew .nm,.proof .t,.stage .t,.zone .t,.slot .t,.presswall .src{letter-spacing:-.025em}
   /* ---------- brand graphics: herb prints, bleeding off the edge ---------- */
   .herbhost{position:relative;overflow:hidden;isolation:isolate}
@@ -498,7 +498,7 @@
   .pair .side > div{border-top:1px solid var(--line-soft);padding:18px 0 20px}
   .pair .side > div:first-child{border-top:1px solid var(--line)}
   .pair .side .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--sand-dim)}
-  .pair .side .t{font-family:var(--display);font-weight:500;font-size:19px;line-height:1.25;margin-top:9px;letter-spacing:-.02em}
+  .pair .side .t{font-family:var(--display);font-weight:500;font-size:clamp(21px,2.1vw,28px);line-height:1.2;margin-top:10px;letter-spacing:-.025em}
   .pair .side p{margin:7px 0 0;font-size:14px;line-height:1.5;color:var(--sand-dim)}
 
   /* ---------- one quiet screen ---------- */
@@ -1349,11 +1349,6 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="rail">
-    <p style="margin:40px 0 0;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--sand-dim)">
-      <span data-l="ru">Версия от 22 октября 2026 · Avli, Улувату</span><span data-l="en">Version of 22 October 2026 · Avli, Uluwatu</span>
-    </p>
   </div>
 </footer>
 
