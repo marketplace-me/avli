@@ -27,7 +27,7 @@
 <title>Beach Club Bali</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Onest:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Onest:wght@400;500;600&display=swap">
 <style>
   :root{
     --paper:#FFFFFF;
@@ -44,7 +44,7 @@
     --rail:1180px;
     --display:"Source Serif 4",Georgia,"Times New Roman",serif;
     --ui:"Onest","Helvetica Neue",Arial,sans-serif;
-    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    --mono:"Onest","Helvetica Neue",Arial,sans-serif;
   }
   *{box-sizing:border-box}
   body{
@@ -228,7 +228,7 @@
   @media (min-width:700px){.timeline{grid-template-columns:repeat(3,1fr)}}
   @media (min-width:1040px){.timeline{grid-template-columns:repeat(6,1fr)}}
   .tl{background:var(--ink);padding:24px 18px 26px}
-  .tl .y{font-family:var(--mono);font-weight:500;font-size:clamp(22px,2.4vw,30px);line-height:1;font-variant-numeric:tabular-nums}
+  .tl .y{font-family:var(--mono);font-weight:600;font-size:clamp(22px,2.4vw,30px);line-height:1;font-variant-numeric:tabular-nums}
   .tl .e{margin-top:10px;font-size:13.5px;line-height:1.45;color:var(--sand-dim)}
 
   /* ---------- specs ---------- */
@@ -350,7 +350,7 @@
   /* ---------- chapter dividers ---------- */
   .chapter{border-top:1px solid var(--navy);padding-block:clamp(26px,3vw,42px) 0}
   .chapter .rail{display:flex;align-items:baseline;gap:clamp(14px,3vw,36px);flex-wrap:wrap}
-  .chapter .no{font-family:var(--mono);font-weight:500;font-size:clamp(22px,2.6vw,34px);line-height:1;color:var(--sea);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+  .chapter .no{font-family:var(--mono);font-weight:600;font-size:clamp(22px,2.6vw,34px);line-height:1;color:var(--sea);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
   .chapter h2{font-size:clamp(28px,3.9vw,48px)}
 
   /* ---------- brief (deal card) ---------- */
@@ -365,7 +365,7 @@
   .brief.rows li{padding-left:0}
   .brief.rows li::before{display:none}
   .pend{
-    display:inline-block;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--sand-dim);
+    display:inline-block;font-size:11px;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--sand-dim);
     border:1px solid var(--line);border-radius:999px;padding:3px 9px;margin-left:7px;
   }
 
@@ -375,20 +375,20 @@
   .figblock .sub{font-size:13.5px;color:var(--sand-dim);margin:0 0 22px}
   .bars{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,2.2vw,26px)}
   .bars .col{display:grid;grid-template-rows:auto clamp(130px,19vw,200px) auto;gap:10px}
-  .bars .vl{font-family:var(--mono);font-weight:500;font-size:clamp(20px,2.3vw,28px);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+  .bars .vl{font-family:var(--mono);font-weight:600;font-size:clamp(20px,2.3vw,28px);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
   .bars .bw{display:flex;align-items:flex-end}
   .bars .bar{width:100%;background:var(--sea);border-radius:4px 4px 0 0}
   .bars .col.fc .bar{
     background:repeating-linear-gradient(135deg,var(--sea) 0 5px,transparent 5px 11px);
     border:1px solid var(--sea);border-bottom:0;
   }
-  .bars .yr{font-size:12.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--sand-dim);border-top:1px solid var(--line);padding-top:9px}
+  .bars .yr{font-size:12.5px;font-weight:500;letter-spacing:.11em;text-transform:uppercase;color:var(--sand-dim);border-top:1px solid var(--line);padding-top:9px}
 
   .hbars{display:grid;gap:11px;margin-top:4px}
   .hbars > div{display:grid;grid-template-columns:minmax(96px,28%) 1fr auto;gap:16px;align-items:center;font-size:15px}
   .hbars .track{height:9px;background:var(--line-soft);border-radius:999px;overflow:hidden}
   .hbars .fill{height:100%;background:var(--sea);border-radius:999px}
-  .hbars .val{font-size:clamp(16px,1.4vw,19px);font-weight:500;color:var(--sand);letter-spacing:-.015em;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .hbars .val{font-size:clamp(16px,1.4vw,19px);font-weight:600;color:var(--sand);letter-spacing:-.015em;font-variant-numeric:tabular-nums;white-space:nowrap}
 
   /* ---------- table ---------- */
   .tblwrap{overflow-x:auto;margin-top:26px}
@@ -412,7 +412,7 @@
   .stage li{font-size:14px;line-height:1.45;color:var(--sand-dim);padding-left:15px;position:relative}
   .stage li::before{content:"";position:absolute;left:0;top:8px;width:4px;height:4px;border-radius:50%;background:var(--line)}
   .st{
-    align-self:flex-start;margin-top:auto;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;
+    align-self:flex-start;margin-top:auto;font-size:11.5px;font-weight:500;letter-spacing:.13em;text-transform:uppercase;
     border:1px solid var(--line);border-radius:999px;padding:4px 10px;
   }
   .st.done{background:var(--sea);border-color:var(--sea);color:var(--paper)}
@@ -440,25 +440,25 @@
   .near{display:grid;gap:0;margin-top:34px;border-top:1px solid var(--line-soft)}
   @media (min-width:820px){.near{grid-template-columns:1fr 1fr;column-gap:56px}}
   .near > div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-soft);font-size:16px}
-  .near .t{color:var(--sand);font-weight:500;font-size:clamp(18px,1.7vw,23px);letter-spacing:-.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .near .t{color:var(--sand);font-weight:600;font-size:clamp(18px,1.7vw,23px);letter-spacing:-.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
 
   /* ---------- brand layer: CoFo-style micro-typography ---------- */
 
   .eyebrow,.mark,.bar nav,.lang button,.kpi .n small,.proof .n,.gallery figcaption,.roster .cr,
   .crew .rl,.presswall .kd,.presswall .go,.figblock .cap,.brief .k,.pend,.stage .no,.st,.tbl th,
   .fgrid .l,.bars .yr,.tl .y,.near .t,.hbars .val,.specs span{font-family:var(--mono)}
-  .eyebrow{font-size:12px;letter-spacing:.14em;font-weight:400;color:var(--sand-dim)}
+  .eyebrow{font-size:12px;letter-spacing:.15em;font-weight:500;color:var(--sand-dim)}
   .mark{font-family:var(--mono);font-weight:500;letter-spacing:.17em}
   .mark span{color:var(--sand-dim)}
   .bar nav{font-size:12.5px;letter-spacing:.07em;font-family:var(--ui)}
-  .lang button{font-size:12px;letter-spacing:.14em}
-  .hero-meta{font-size:12.5px;letter-spacing:.09em}
-  .proof .n,.crew .rl,.brief .k,.stage .no,.fgrid .l,.presswall .kd,.figblock .cap{font-size:12px;letter-spacing:.13em;font-weight:400;color:var(--sand-dim)}
-  .kpi .n small{font-family:var(--mono);font-weight:400;letter-spacing:.09em}
+  .lang button{font-size:12px;font-weight:500;letter-spacing:.13em}
+  .hero-meta{font-size:12.5px;font-weight:500;letter-spacing:.1em}
+  .proof .n,.crew .rl,.brief .k,.stage .no,.fgrid .l,.presswall .kd,.figblock .cap{font-size:12px;letter-spacing:.14em;font-weight:500;color:var(--sand-dim)}
+  .kpi .n small{font-family:var(--mono);font-weight:500;letter-spacing:.11em}
   .kpi .k,.proof p,.zone p,.srcnote{letter-spacing:.005em}
   .kpi .k{font-size:12.5px}
-  .tbl th{font-weight:400;letter-spacing:.12em}
-  .presswall .go{font-size:12px;letter-spacing:.12em}
+  .tbl th{font-weight:500;letter-spacing:.13em}
+  .presswall .go{font-size:12px;font-weight:500;letter-spacing:.13em}
   .near .t,.hbars .val,.bars .yr{letter-spacing:.02em}
   h3{font-weight:500;letter-spacing:-.01em}
   .chips span{letter-spacing:.02em;font-size:13.5px}
@@ -500,7 +500,7 @@
   .pair .lead-claim p{margin:14px 0 0;font-size:17px;line-height:1.55;color:var(--sand-dim);max-width:40ch}
   .pair .side > div{border-top:1px solid var(--line-soft);padding:18px 0 20px}
   .pair .side > div:first-child{border-top:1px solid var(--line)}
-  .pair .side .k{font-family:var(--mono);font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--sand-dim)}
+  .pair .side .k{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--sand-dim)}
   .pair .side .t{font-family:var(--display);font-weight:500;font-size:clamp(21px,2.1vw,28px);line-height:1.2;margin-top:10px;letter-spacing:-.025em}
   .pair .side p{margin:7px 0 0;font-size:15px;line-height:1.5;color:var(--sand-dim)}
 
@@ -534,7 +534,7 @@
   details.src{margin-top:30px;border-top:1px solid var(--line-soft);padding-top:12px}
   details.src > summary{
     list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;
-    font-family:var(--mono);font-size:12px;letter-spacing:.15em;text-transform:uppercase;
+    font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
     color:var(--sand-dim);
   }
   details.src > summary::-webkit-details-marker{display:none}
@@ -1087,7 +1087,7 @@
 
     <div class="figblock" style="margin-top:clamp(44px,5.4vw,76px)">
       <div class="cap"><span data-l="ru">Участок · сделка в работе</span><span data-l="en">The plot · deal in progress</span></div>
-      <p class="sub"><span data-l="ru">Пекату, западный Букит · <span style="font-family:var(--mono)">8°48′51″ ю.ш. 115°05′27″ в.д.</span></span><span data-l="en">Pecatu, western Bukit · <span style="font-family:var(--mono)">8°48′51″S, 115°05′27″E</span></span></p>
+      <p class="sub"><span data-l="ru">Пекату, западный Букит · <span style="font-family:var(--mono);font-weight:500">8,8141° ю.ш. · 115,0909° в.д.</span></span><span data-l="en">Pecatu, western Bukit · <span style="font-family:var(--mono);font-weight:500">8.8141°S · 115.0909°E</span></span></p>
     </div>
 
     <div class="kpi" style="margin-top:0">
