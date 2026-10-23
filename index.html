@@ -509,10 +509,10 @@
   /* ---------- gallery: one large, two small ---------- */
   .gallery.uneven{grid-template-columns:1fr}
   @media (min-width:860px){
-    .gallery.uneven{grid-template-columns:1.55fr 1fr;grid-template-rows:auto auto;gap:16px}
+    .gallery.uneven{grid-template-columns:1.55fr 1fr;grid-template-rows:auto auto;gap:16px;align-items:start}
     .gallery.uneven figure:nth-child(1){grid-row:1 / span 2}
-    .gallery.uneven figure:nth-child(1) img{aspect-ratio:4/5;height:100%}
-    .gallery.uneven figure:nth-child(2) img,.gallery.uneven figure:nth-child(3) img{aspect-ratio:4/3}
+    .gallery.uneven figure:nth-child(1) img{aspect-ratio:3/4;height:auto}
+    .gallery.uneven figure:nth-child(2) img,.gallery.uneven figure:nth-child(3) img{aspect-ratio:2/3;object-position:center top}
   }
 
   /* ---------- a photo that breaks the column ---------- */
